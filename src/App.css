@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+/* General Styling */
+
+html
+{
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body
+{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root
+{
+  --primary: #003d2b;
+  --primary-light: #ffff;
+  --secondary:#3bb776;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul
+{
+  list-style-type: none;
+}
+
+a
+{
+  text-decoration: line-through;
+}
+
+h1, h2, h3,
+h4, h5, h5,
+p
+{
+  color: var(--primary);
+}
+
+/* Navbar */
+
+.nav-info
+{
+  background-color: var(--primary);
+}
+
+.nav-info li
+{
+  background-color: var(--secondary);
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.nav-info li:hover
+{
+  background-color: var(--primary-light);
+}
+
+.nav-info li:hover i
+{
+  color: var(--primary);
+  transition: 0.5s;
+}
+
+.nav-info a
+{
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.nav-info i
+{
+  color: var(--primary-light);
+  font-size: 1.5rem;
+}
+
+.navbar-header a
+{
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.nav a
+{
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mobile-nav
+{
+  display: none;
+  position: fixed;
+  left: 0;
+  width: 75%;
+  height: 200%;
+  background-color: #3bb777e7;
+  z-index: 10;
+  top: 0
+}
+
+.mobile-nav a
+{
+  font-weight: 500;
+  color: var(--primary-light);
+  text-decoration: none;
+}
+
+.mobile-nav li
+{
+  list-style-type: none;
+}
+
+.menu-btn
+{
+  display: none;
+  position: absolute;
+  right: 1rem;
+}
+
+.menu-btn i
+{
+  color: var(--primary);
+  font-size: 1.5rem
+}
+
+.mobile-social-icons
+{
+  position: fixed;
+}
+
+.dropmenu
+{
+  position: absolute;
+  background-color: var(--primary);
+  border-radius: 4px;
+  width: 10rem;
+  z-index: 10;
+}
+
+.dropmenu a
+{
+  color: var(--primary-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropmenu li
+{
+  padding: 0;
+  width: 100%;
+}
+
+.dropmenu li:hover
+{
+  background-color: var(--secondary);
+}
+
+/* carousel */
+.carousel
+{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 30rem;
+}
+
+.carousel .slides img
+{
+  object-fit: cover;
+  width: 100%;
+  height: 30rem;
+}
+
+.carousel .controllers
+{
+  position: absolute;
+}
+
+.carousel .controllers span
+{
+  position: absolute;
+  color: var(--primary-light);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel .controllers .right
+{
+  right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel .controllers span .counter
+{
+  background-color: #0000002a;
+  width: 4rem;
+  flex-direction: column;
+}
+
+.carousel .controllers span .counter .count
+{
+  width: 100%;
+}
+
+.carousel .controllers span .counter .count:hover
+{
+  background-color: #0000002a;
+}
+
+/* Services */
+.service-box h3
+{
+  color: var(--primary);
 }
