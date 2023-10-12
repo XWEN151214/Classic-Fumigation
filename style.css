@@ -78,12 +78,10 @@ li{
     width: 16px;
     height: 16px;
     padding: 0.5px;
-    text-align: center;
     color: black;
     margin-top: 18px;
     font-weight: bold;
     border-radius: 50%;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
