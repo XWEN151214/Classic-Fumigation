@@ -4,6 +4,7 @@ html
 {
   width: 100%;
   overflow-x: hidden;
+  caret-color: transparent;
   scroll-behavior: smooth;
 }
 
