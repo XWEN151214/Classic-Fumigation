@@ -35,7 +35,7 @@ h2{
 }
 a{
     text-decoration:  none;
-    color: white;
+    color: white;   
 }
 
 .b-1 p{
@@ -64,8 +64,14 @@ li{
 .icons a i{
     color: #20AA47;
     font-size: 1.2rem;
+    
 }
 .icons a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100%;
     background-color: #2A3453;
     padding: 6px;
@@ -102,4 +108,172 @@ li{
     height: 20px;
     font-weight: bold;
     margin-top: 17px;
+}
+.ftr div a{
+    text-decoration: none;
+}
+/* ********contact *********/
+
+
+
+.contact-pg{
+    width: 100%;
+    /* background-color: red; */
+}
+.contact-fdiv {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contact-fdiv::before{
+    content: '';
+    background-image: url('bg\ \(2\).jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+
+}
+
+
+
+
+
+#contact-head{
+    position: relative;
+    color: black;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 0;
+} 
+
+
+.contact-sdiv{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: #F4F8FD;
+
+}
+
+.contact-sdiv .left-vid{
+    width: 50%;
+
+}
+
+.contact-sdiv .left-vid h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #20AA4D;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.contact-sdiv .right-form{
+    width: 50%;
+}
+
+
+.getIntouch{
+    color: #3A4268;
+}
+
+.sleft-img img{
+    width: 100%;
+    height: 350px;
+
+}
+
+.contact-sdiv input{
+    height: 50px;
+}
+.contact-sdiv select{
+    height: 50px;
+}
+
+.right-form .msg{
+    border: none;
+    background-color: #F7BE00;
+    color: #000000;
+    font-weight: bold;
+}
+.right-form .msg i{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #20aa4d;
+    padding: 4px;
+}
+.right-form .msg i:hover{
+    background-color: #001457;
+    color: white;
+}
+
+.contact-tdiv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 40px;
+    background-color: #DEE5EB;
+    flex-wrap: wrap;
+}
+
+.contact-tdiv div a{
+    display: flex;
+    gap: 10px;
+    /* align-items: flex-start; */
+}
+
+
+.contact-tdiv div i{
+    font-size: 50px;
+    margin-top: 20px;
+    color: #20AA4D;
+}
+
+.contact-tdiv div h2{
+    margin-top: 10px;
+}
+.contact-tdiv div[class="sec-1"],[class="sec-2"],[class="sec-3"] {
+    background-color: #000E39;
+    padding: 20px 40px;
+    width: 360px;
+}
+.contact-tdiv div a{
+    text-decoration: none;
+}
+
+
+@media (max-width: 812px) {
+    .contact-tdiv{
+        justify-content: flex-start;
+    }
+    .contact-tdiv div[class="sec-1"],[class="sec-2"],[class="sec-3"]{
+        width: 100%;
+        padding: 10px 40px;
+
+    }
+    .contact-sdiv{
+        /* width: 100%; */
+        flex-direction: column;
+    }
+    .contact-sdiv .right-form{
+        width: 100%;
+    }
+
+    .contact-sdiv .left-vid{
+        width: 100%;
+    }
+
+
+
+    
 }
