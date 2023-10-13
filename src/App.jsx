@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Home from "./components/home"
-import About from "./components/about"
+import Home from "./components/home";
+import About from "./components/about";
+import Navbar from './components/Navbar';
 import Clients from './components/clients';
 import Contact from './components/contact';
 import BedBugTreatment from './components/services/bedBugTreatment';
@@ -15,6 +16,7 @@ function App() {
 	return (
 		<>
 			<BrowserRouter>
+				<Navbar />
 				<Routes>
 					<Route path='/' exact element={<Home />} />
 					<Route path='/about' element={<About />} />
