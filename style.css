@@ -196,14 +196,14 @@ li{
 .contact-sdiv select{
     height: 50px;
 }
-
-.right-form .msg{
+/* universal as both contact/quote*/
+body .msg{
     border: none;
     background-color: #F7BE00;
     color: #000000;
     font-weight: bold;
 }
-.right-form .msg i{
+.msg i{
     width: 20px;
     height: 20px;
     border-radius: 4px;
@@ -211,7 +211,7 @@ li{
     background-color: #20aa4d;
     padding: 4px;
 }
-.right-form .msg i:hover{
+.msg i:hover{
     background-color: #001457;
     color: white;
 }
@@ -271,9 +271,124 @@ li{
 
     .contact-sdiv .left-vid{
         width: 100%;
+    }   
+}
+
+
+/* GET A QUOTE */
+
+.quote-fdiv{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.quote-fdiv::before{
+    content: '';
+    background: #0D0B19;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    z-index: -1;
+
+}
+
+.quote-fdiv h1{
+    font-weight: 700;
+    font-size: 60px;
+    color: black;
+
+}
+.bar{
+    width: 224px;
+    height: 10px;
+    background-color: #FF6700;
+}
+.quote-sdiv{
+    width: 100%;
+    padding: 20px;
+    background-color: #DEE5EB;
+}
+.quote-sdiv div[class="head-div"]{
+    padding-bottom: 10px;
+    position: relative;
+}
+.quote-sdiv div h2{
+    text-align: center;
+    color: #072788;
+    font-size: 24px;
+    font-weight: 600;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.quote-sdiv div[class="head-div"]::after{
+    content: '';
+    width: 300px;
+    height: 2.5px;
+    background-color: #FF6700;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translate(-50%,-50%);
+}
+
+.quote-sdiv div h2 span{
+    color: #20AA4D;
+}
+.quote-sdiv .form-div{
+    width: 100%;
+}
+
+.quote-sdiv .form-div input{
+    height: 51px;
+}
+
+.quote-sdiv .form-div select{
+    height: 51px;
+}
+
+.quote-sdiv .form-div .msg{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.quote-sdiv .form-div .frow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.quote-sdiv .form-div .frow .margin{
+    margin-left: 10px;
+}
+
+@media (max-width:766px) {
+    /* .quote-sdiv .form-div .form-row div:nth-child(2){
+        margin-right: ;
+        background-color: red;
+    } */
+    .quote-sdiv .form-div .form-row div input{
+        height: 51px;
+    }
+    .quote-sdiv .form-div .frow{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
     }
 
+    .quote-sdiv .form-div .frow div:nth-child(2){
 
-
-    
+        margin-top: 20px;
+        margin-left: -2px;
+        width: 100%;
+    }
 }
