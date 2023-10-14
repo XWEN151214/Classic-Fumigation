@@ -209,8 +209,45 @@ p
   background-color: #0000002a;
 }
 
-/* Services */
+/* Services box home */
 .service-box h3
 {
   color: var(--primary);
+}
+
+
+/* Services Page  */
+.taskbar-heading {
+  color: var(--primary);
+  margin: 20px;
+}
+
+.taskbar-list {
+
+}
+
+.taskbar-links {
+  /* border-bottom: 2px solid gray; */
+  margin: 10px 0;
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary);
+  padding: 0px 10px;
+  width: 70%;
+}
+.taskbar-links a {
+  /* border-bottom: 2px solid gray; */
+  text-decoration: none;
+  color: var(--primary);
+  margin: 20px 0;
+  font-size: 18px;
+  /* font-weight: ; */
+}
+
+.taskbar-links:hover {
+  background-color: var(--secondary);
+}
+
+.taskbar-links a:hover {
+  /* background-color: var(--secondary); */
 }
