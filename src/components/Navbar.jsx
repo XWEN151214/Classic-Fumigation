@@ -29,7 +29,7 @@ const dropDown = () => {
 
 const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
 { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
-{ id: 3, link: "coakroahes-control-services", title: "Coackroaches Control Service" },
+{ id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
 { id: 4, link: "disinfection-services", title: "Disinfection Services" },
 { id: 5, link: "fumigation-services", title: "Fumigation Services" },
 { id: 6, link: "mosquito-spray-service", title: "Mosquito Spray Service" },
