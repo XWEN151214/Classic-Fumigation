@@ -1,6 +1,7 @@
 import React from "react";
 import "../../App.css";
 import image from "../../images/bed-bug-treatment.jpeg"
+import { Link } from "react-router-dom";
 
 export default function BedBugTreatment() {
     return (
@@ -145,9 +146,20 @@ export default function BedBugTreatment() {
                 {/* content on the right of the page  */}
                 <div className="col-md-4">
                     <div className="position-sticky" style={{ top: "2rem" }}>
-                        <div className="p-4 mb-3 bg-body-tertiary rounded">
-                            <h4 className="fst-italic">About</h4>
-                            <p className="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
+                        <div>
+                            <h3>Our Services</h3>
+                            <ul>
+                                <li><Link>Bed-Bug Treatement</Link></li>
+                                <li><Link>Termite Control</Link></li>
+                                <li><Link>Mosquito Spray Service</Link></li>
+                                <li><Link>Pest Control</Link></li>
+                                <li><Link>Coakroaches Control Services</Link></li>
+                                <li><Link>Disinfection Services</Link></li>
+                                <li><Link>Fumigation Services</Link></li>
+                                <li><Link>Sofa Cleaning Services</Link></li>
+                                <li><Link>Carpet Cleaning Services</Link></li>
+                                <li><Link>Rodent Control</Link></li>
+                            </ul>
                         </div>
 
                         <div className="p-4">
@@ -168,14 +180,6 @@ export default function BedBugTreatment() {
                             </ol>
                         </div>
 
-                        <div className="p-4">
-                            <h4 className="fst-italic">Elsewhere</h4>
-                            <ol className="list-unstyled">
-                                <li><a href="#">GitHub</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Facebook</a></li>
-                            </ol>
-                        </div>
                     </div>
                 </div>
             </div>
