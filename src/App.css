@@ -217,6 +217,13 @@ p
 
 
 /* Services Page  */
+
+.header {
+  background-image: url("./images/bed-bug-bg.jpg");
+  height: 400px;
+  opacity: 0.8;
+}
+
 .taskbar-heading {
   color: var(--primary);
   margin: 20px;
