@@ -27,6 +27,17 @@ const dropDown = () => {
     );
 }
 
+const Services = [{link: "bed-bug-treatment", title: "Bed-Bug Treatment"},
+    { link: "carpet-cleaning-service", title: "Carpet Cleaning" },
+    { link: "coakroahes-control-service", title: "Coackroaches Control Service" },
+    { link: "disinfection-services", title: "Disinfection Services" },
+    { link: "fumigation-services", title: "Fumigation Services" },
+    { link: "mosquito-spray-service", title: "Mosquito Spray Service" },
+    { link: "pest-control", title: "Pest Control" },
+    { link: "rodent-control", title: "Rodent Control" },
+    { link: "sofa-cleaning-services", title: "Sofa Cleaning Services" },
+    { link: "termite-control", title: "Termite Control" }]
+
 const Navbar = () => {
     const [isDropped, setIsDropped] = useState(false);
     const [navOpen, setNavOpen] = useState(false);
@@ -66,15 +77,11 @@ const Navbar = () => {
                         </a>
                         {
                             isDropped ? <div className="dropmenu">
-                                <li className="py-1 px-3">
-                                    <Link to="/services/bed-bug-treatment">Bed Bug Treatment</Link>
-                                </li>
-                                <li className="py-1 px-3">
-                                    <a href="#">Page 1-2</a>
-                                </li>
-                                <li className="py-1 px-3">
-                                    <a href="#">Page 1-3</a>
-                                </li>
+                                {Services.map((service)=> {
+                                    <li className="py-1 px-3">
+                                        <Link to={`/services/${service.link}`}>{service.title}</Link>
+                                    </li>
+                                })}
                             </div>
                                 : <></>
                         }

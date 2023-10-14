@@ -288,8 +288,17 @@ button:hover
   font-weight: 700;
 }
 
+.taskbar {
+  background-color: var(--primary);
+  padding-top: 10px;
+}
+
+.taskbar-link-list {
+
+}
+
 .taskbar-heading {
-  color: var(--primary);
+  color: var(--primary-light);
   margin: 20px;
 }
 
@@ -298,7 +307,6 @@ button:hover
 }
 
 .taskbar-links {
-  /* border-bottom: 2px solid gray; */
   margin: 10px 0;
   text-decoration: none;
   list-style: none;
@@ -308,18 +316,39 @@ button:hover
   width: 70%;
 }
 .taskbar-links a {
-  /* border-bottom: 2px solid gray; */
   text-decoration: none;
+  color: var(--primary-light);
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.taskbar-links-active {
+  margin: 10px 0;
+  text-decoration: none;
+  list-style: none;
   color: var(--primary);
+  padding: 0px 10px;
+  border-bottom: 2px solid var(--secondary);
+  background-color: var(--secondary);
+  width: 70%;
+}
+
+.taskbar-links-active a{
+  text-decoration: none;
+  color: var(--primary-light);
   margin: 20px 0;
   font-size: 18px;
 }
 
 .taskbar-links:hover {
   background-color: var(--secondary);
+  font-weight: 500;
 }
 
 .taskbar-links a:hover {
+
+}
+.taskbar-links-active:hover {
   font-weight: 500;
 }
 
