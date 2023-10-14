@@ -7,7 +7,7 @@ export default function BedBugTreatment() {
     return (
         <div>
             {/* black slide  */}
-            <div className="p-4 p-md-5 mb-4 rounded text-bg-dark">
+            <div className="p-4 p-md-5 mb-0 rounded text-bg-dark">
                 <div className="col-md-6 px-0">
                     <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
                     <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
@@ -25,10 +25,9 @@ export default function BedBugTreatment() {
                     <article className="blog-post">
                         <h2 className="blog-post-title mb-1">BED BUG TREATMENT</h2>
                         
-                        <img src={image} alt="" />
-                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, lists, tables, images, code, and more are all supported as expected.</p>
-                        <hr />
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
+                        <img src={image} alt="" className="img-fluid mb-4 mt-4"/>
+                        
+
                         <h2>Blockquotes</h2>
                         <p>This is an example blockquote in action:</p>
                         <blockquote className="blockquote">
