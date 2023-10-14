@@ -233,6 +233,7 @@ p
   list-style: none;
   color: var(--primary);
   padding: 0px 10px;
+  border-bottom: 2px solid var(--secondary);
   width: 70%;
 }
 .taskbar-links a {
@@ -241,7 +242,6 @@ p
   color: var(--primary);
   margin: 20px 0;
   font-size: 18px;
-  /* font-weight: ; */
 }
 
 .taskbar-links:hover {
@@ -249,5 +249,5 @@ p
 }
 
 .taskbar-links a:hover {
-  /* background-color: var(--secondary); */
+  font-weight: 500;
 }
