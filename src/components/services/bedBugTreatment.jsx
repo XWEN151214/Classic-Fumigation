@@ -147,18 +147,18 @@ export default function BedBugTreatment() {
                 <div className="col-md-4">
                     <div className="position-sticky" style={{ top: "2rem" }}>
                         <div>
-                            <h3>Our Services</h3>
-                            <ul>
-                                <li><Link>Bed-Bug Treatement</Link></li>
-                                <li><Link>Termite Control</Link></li>
-                                <li><Link>Mosquito Spray Service</Link></li>
-                                <li><Link>Pest Control</Link></li>
-                                <li><Link>Coakroaches Control Services</Link></li>
-                                <li><Link>Disinfection Services</Link></li>
-                                <li><Link>Fumigation Services</Link></li>
-                                <li><Link>Sofa Cleaning Services</Link></li>
-                                <li><Link>Carpet Cleaning Services</Link></li>
-                                <li><Link>Rodent Control</Link></li>
+                            <h3 className="taskbar-heading">Our Services</h3>
+                            <ul className="taskbar-list">
+                                <li className="taskbar-links"><Link>Bed-Bug Treatement</Link></li>
+                                <li className="taskbar-links"><Link>Termite Control</Link></li>
+                                <li className="taskbar-links"><Link>Mosquito Spray Service</Link></li>
+                                <li className="taskbar-links"><Link>Pest Control</Link></li>
+                                <li className="taskbar-links"><Link>Coakroaches Control Services</Link></li>
+                                <li className="taskbar-links"><Link>Disinfection Services</Link></li>
+                                <li className="taskbar-links"><Link>Fumigation Services</Link></li>
+                                <li className="taskbar-links"><Link>Sofa Cleaning Services</Link></li>
+                                <li className="taskbar-links"><Link>Carpet Cleaning Services</Link></li>
+                                <li className="taskbar-links"><Link>Rodent Control</Link></li>
                             </ul>
                         </div>
 
