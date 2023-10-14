@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import React from "react";
 import "../../App.css";
 import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
 
 export default function CarpetCleaning() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
     { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
     { id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
