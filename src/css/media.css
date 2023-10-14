@@ -5,9 +5,53 @@
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .service-box .box
+    {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+
+    .box
+    {
+      margin-left: 5rem;
+      margin-right: 5rem;
+    }
+
+    .contact .row
+    {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
 } 
 
+@media screen and (max-width: 1440px) and (min-width: 1142px)
+{
+  .box
+  {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+}
 
+@media screen and (max-width: 768px)
+{
+  .service-box .row
+  {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .service-box .box
+  {
+    margin-top: 3rem;
+  }
+
+  .ftr
+  {
+    flex-direction: column;
+  }
+} 
 
 
 @media screen and (max-width: 425px) 
