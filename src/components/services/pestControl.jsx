@@ -4,6 +4,16 @@ import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
 
 export default function PestControl() {
+    const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
+    { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
+    { id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
+    { id: 4, link: "disinfection-services", title: "Disinfection Services" },
+    { id: 5, link: "fumigation-services", title: "Fumigation Services" },
+    { id: 6, link: "mosquito-spray-service", title: "Mosquito Spray Service" },
+    { id: 7, link: "pest-control", title: "Pest Control" },
+    { id: 8, link: "rodent-control", title: "Rodent Control" },
+    { id: 9, link: "sofa-cleaning-services", title: "Sofa Cleaning Services" },
+    { id: 10, link: "termite-control", title: "Termite Control" }]
     return (
         <div>
             {/* black slide  */}
@@ -141,25 +151,15 @@ export default function PestControl() {
                         <a className="btn btn-outline-secondary rounded-pill disabled">Newer</a>
                     </nav>
                 </div>
-
-
-
                 {/* content on the right of the page  */}
                 <div className="col-md-4 taskbar">
                     <div className="position-sticky " style={{ top: "2rem" }}>
                         <div className="taskbar-link-list">
                             <h3 className="taskbar-heading">Our Services</h3>
                             <ul className="taskbar-list">
-                                <li className="taskbar-links-active"><Link to="/services/bed-bug-treatment">Bed-Bug Treatement</Link></li>
-                                <li className="taskbar-links"><Link>Termite Control</Link></li>
-                                <li className="taskbar-links"><Link>Mosquito Spray Service</Link></li>
-                                <li className="taskbar-links"><Link>Pest Control</Link></li>
-                                <li className="taskbar-links"><Link>Coakroaches Control Services</Link></li>
-                                <li className="taskbar-links"><Link>Disinfection Services</Link></li>
-                                <li className="taskbar-links"><Link>Fumigation Services</Link></li>
-                                <li className="taskbar-links"><Link>Sofa Cleaning Services</Link></li>
-                                <li className="taskbar-links"><Link>Carpet Cleaning Services</Link></li>
-                                <li className="taskbar-links"><Link>Rodent Control</Link></li>
+                                {Services.map((service) => (
+                                    <li className={`taskbar-links${service.id === 7 ? "-active" : ""}`} key={service.id}><Link to={`/services/${service.link}`}>{service.title}</Link></li>
+                                ))}
                             </ul>
                         </div>
 
