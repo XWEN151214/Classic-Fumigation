@@ -233,7 +233,7 @@ button:hover
   background-color: #0000002a;
 }
 
-/* Services */
+/* Service Box */
 .service-box h3
 {
   color: var(--primary);
@@ -269,6 +269,58 @@ button:hover
 .service-img img
 {
   width: 6rem;
+}
+
+/* Service Pages */
+
+.header {
+  background-image: url("./images/bed-bug-bg.jpg");
+  height: 400px;
+}
+
+.header-cover {
+  background-color: rgba(0, 0, 0, 0.678);
+  height: 100%;
+  width: 100%;
+}
+
+.header-heading h1 {
+  font-weight: 700;
+}
+
+.taskbar-heading {
+  color: var(--primary);
+  margin: 20px;
+}
+
+.taskbar-list {
+
+}
+
+.taskbar-links {
+  /* border-bottom: 2px solid gray; */
+  margin: 10px 0;
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary);
+  padding: 0px 10px;
+  border-bottom: 2px solid var(--secondary);
+  width: 70%;
+}
+.taskbar-links a {
+  /* border-bottom: 2px solid gray; */
+  text-decoration: none;
+  color: var(--primary);
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.taskbar-links:hover {
+  background-color: var(--secondary);
+}
+
+.taskbar-links a:hover {
+  font-weight: 500;
 }
 
 /* contact */

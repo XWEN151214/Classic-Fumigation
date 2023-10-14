@@ -7,11 +7,11 @@ export default function BedBugTreatment() {
     return (
         <div>
             {/* black slide  */}
-            <div className="p-4 p-md-5 mb-0 rounded text-bg-dark">
-                <div className="col-md-6 px-0">
-                    <h1 className="display-4 fst-italic">Title of a longer featured blog post</h1>
-                    <p className="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-                    <p className="lead mb-0"><a href="#" className="text-white fw-bold">Continue reading...</a></p>
+            <div className="mb-0 text-bg-dark header">
+                <div className="container-fluid header-cover">
+                    <div className="col-md-6 px-0 d-flex align-items-center justify-content-center w-100 h-100 header-heading">
+                        <h1 className="display-4 py-2 text-center">Bed-Bug Treatment Services</h1>
+                    </div>
                 </div>
             </div>
 
@@ -24,9 +24,9 @@ export default function BedBugTreatment() {
 
                     <article className="blog-post">
                         <h2 className="blog-post-title mb-1">BED BUG TREATMENT</h2>
-                        
-                        <img src={image} alt="" className="img-fluid mb-4 mt-4"/>
-                        
+
+                        <img src={image} alt="" className="img-fluid mb-4 mt-4" />
+
 
                         <h2>Blockquotes</h2>
                         <p>This is an example blockquote in action:</p>

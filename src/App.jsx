@@ -5,6 +5,7 @@ import About from "./components/about";
 import Navbar from './components/Navbar';
 import Clients from './components/clients';
 import Contact from './components/contact';
+import Footer from './components/footer';
 import BedBugTreatment from './components/services/bedBugTreatment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -24,6 +25,7 @@ function App() {
 					<Route path='/clients' element={<Clients />} />
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</>
 	);
