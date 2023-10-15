@@ -5,9 +5,9 @@ import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
 
 export default function BedBugTreatment() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    // }, []);
     const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
     { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
     { id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
@@ -42,119 +42,50 @@ export default function BedBugTreatment() {
                         <img src={image} alt="" className="img-fluid mb-4 mt-4" />
 
 
-                        <h2>Blockquotes</h2>
-                        <p>This is an example blockquote in action:</p>
-                        <blockquote className="blockquote">
-                            <p>Quoted text goes here.</p>
-                        </blockquote>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <h3>Example lists</h3>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
+                        <p>A1 fumigations are providing bed bug treatment in Karachi at affordable prices. We do bed bug spray for killing them. We use the latest techniques and methods for Bed bug treatment and help you with this problem. Bed bugs are nighttime insects, and they look like cockroaches and ants. They suck your blood at night when you are sleeping. They live so secretively that you cannot detect them at the initial stage.
+                        <br /><br />
+                        Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
+
+                        <h3>Bed Bugs Control</h3>
                         <ul>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
+                            <li>Bed Bugs Control For Residential & Commercial</li>
+                            <li>Bed Bugs Control In Defence Housing Authority</li>
+                            <li>Bed Bugs Fumigation In Karachi</li>
+                            <li>Bed Bugs Control Near me</li>
+                            <li>Bed Bugs Fumigation In Gulshen e Iqbal</li>
+                            <li>Bed Bugs Control In PECHS</li>
+                            <li>Bed Bugs Control In Bahadurabad</li>
+                            <li>Bed Bugs Control In Tariq Road</li>
                         </ul>
-                        <p>And this is an ordered list:</p>
-                        <ol>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ol>
-                        <p>And this is a definition list:</p>
-                        <dl>
-                            <dt>HyperText Markup Language (HTML)</dt>
-                            <dd>The language used to describe and define the content of a Web page</dd>
-                            <dt>Cascading Style Sheets (CSS)</dt>
-                            <dd>Used to describe the appearance of Web content</dd>
-                            <dt>JavaScript (JS)</dt>
-                            <dd>The programming language used to build advanced Web sites and applications</dd>
-                        </dl>
-                        <h2>Inline HTML elements</h2>
-                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-                        <ul>
-                            <li><strong>To bold text</strong>, use <code className="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                            <li><em>To italicize text</em>, use <code className="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                            <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code className="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code className="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code className="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                            <li><del>Deleted</del> text should use <code className="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code className="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                            <li>Superscript <sup>text</sup> uses <code className="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code className="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-                        </ul>
-                        <p>Most of these elements are styled by browsers with few modifications on our part.</p>
-                        <h2>Heading</h2>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <h3>Sub-heading</h3>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <pre><code>Example code block</code></pre>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
+                        
+                        
+                        <h3>Service Quality</h3>
+                        <p>Affordable bed bug treatment is available in Karachi from A1 Fumigations. To get rid of them, we spray for bed bugs. We cure you for bed bugs using the most up-to-date procedures and techniques. Bed bugs are nocturnal insects that resemble ants and cockroaches. When you are resting at night, they take your blood. They dwell in such secrecy that you cannot first find them.</p>
+                        <p>Although bed bugs are small, they can pose serious issues for you and your things in your house. Before an infestation gets out of control and you have to toss away all of your furniture and start over with new items, it’s critical to act quickly if you believe bed bugs are in your house. Colors of bed bugs can vary.</p>
+                        <p>They are level and round in form. Their bites can cause a variety of health problems, including skin rashes, allergies, and cognitive consequences. Finding the signs of a health issue is difficult and may take some time. At first, you’ll have fatigue and a fever, but you’ll quickly learn that you have the illness.</p>
+                        <p>Bed bug removal is a multi-step process. People in contemporary society frequently try home treatments for it, but they are useless. It’s challenging to select fumigators and have faith in them. You only need to be aware of their background and personnel.</p>
+                        <p>Booking a fumigator for your disinfection services is crucial when you have all the necessary information, since postponing the fumigation procedure is an issue. You don’t need to be concerned about your bed insect issue since A1 fumigation is here to help you with it. In Karachi, we provide bed bug treatment. We have a group of skilled workers that don’t utilize chemicals that are harmful to your health. With bed insects on a steady rise, it is becoming difficult for you to look for a good insects cleaning service provider. But with our best bed bug treatment services in Karachi, you don’t have to worry about such problems anymore. We are known as one of the leading providers of superior quality and affordable pest control solutions. The special thing about us is that we make sure that our customers get what they ask for.</p>
+                        <p>Since A1 Fumigations has been offering fumigation services for over 10 years, they are well-known in the industry. We have hundreds of happy customers who have used them again for their fumigation services. We are professionals in a variety of services, including bed bugs, termites, and disinfection. For more than 10 years, A1 Fumigations has offered these services; we train our staff using the most recent tools and techniques. You will be delighted to work with them because of their ability. Your health is our first priority; therefore, we constantly develop fresh, simple, and cutting-edge concepts that priorities the health of your family and children.</p>
+                        <p>Large infestations may be successfully treated with bed bug sprays or foggers, but only when combined with heat therapy. Bug bombs might undoubtedly be useful if you’re attempting to eradicate bed bugs on your own. These sprays’ active components, such as pyrethrin’s, will eliminate tiny insect populations. Your life might quickly become terrible if you have a bed insect infestation. Not only can the finest bed bug treatment get rid of them, but it may also aid in avoiding further infestations. Here are some suggestions for eliminating bed bugs and avoiding further issues. Identification of a condition is the first step in bed bug prevention. Finding these small bloodsuckers on their own is insufficient since they frequently coexist with other pests like cockroaches or fleas, making it challenging to distinguish between one pest species and another. Before beginning bed bug treatment services, it is crucial to have a full examination performed by a professional to determine what sort of insect issue you have.</p>
+                        <h3>IS IT DIFFICULT TO GET RID OF BED BUGS?</h3>
+                        <p>Getting rid of bed bugs is a whole process. Commonly, people of our societies do home remedies for that, but they are of no use. Choosing fumigators and trusting them is difficult. All you need to know is about their experience and their workers.</p>
+                        <p>When you have all the information that is required when hiring a fumigator, then it is essential to book them for your disinfection  services as delaying the fumigation process is a problem. You do not have to worry about your bed bug problem, As A1 fumigation are here to assist you with this. We offer bed bug treatment in Karachi. We have a team of experienced and trained labors who use not dangerous chemicals for your health. Avail benefit from our knowledge and get freedom from bed bugs. We have our offices in Karachi, Islamabad, Faisalabad, and Quetta.</p>
+                        <h3>Best Bed Bugs Treatment Services In Karachi:</h3>
+                        <p>With bed insects on a steady rise, it is becoming difficult for you to look for a good insects cleaning service provider. But with our best bed bug treatment services in Karachi, you don’t have to worry about such problems anymore. We are known as one of the leading providers of superior quality and affordable pest control solutions.</p>
+                        <p>The special thing about us is that we make sure that our customers get what they ask for.</p>
+                        <h3>WHY A1 FUMIGATIONS?</h3>
+                        <p>A1 fumigations have been providing fumigation services for more than ten years, and they have a known name in the market. We have hundreds of satisfied clients who chose them over and over again for their fumigation services. . We are experts in services like Bed bugs, termites, disinfection and many more. A1 fumigations have been providing these services for more than ten years; we train our workers according to the new technology and methods. They are so skilled that you will be glad to work with them. Your health is our priority; that is why we always come up with new, easy and modern ideas keeping your family and your children’s health superiority. <br /><br /> So you will be satisfied with our services and will not repent hiring us for your bugs treatment  services in Karach</p>
+                        <h3>Best Bed Bug Sprays & Foggers:</h3>
+                        <p>Using a bed bug spray or fogger can be effective against large infestations, but it should only be used in conjunction with heat treatment. If you’re trying to get rid of bed bugs on your own, bug bombs can definitely help.</p>
+                        <p>The active ingredients in these sprays (like pyrethrins) will kill off small populations of bugs.</p>
+                        <h3>Effective Bed Bug Control & Prevention:</h3>
+                        <p>An infestation of bed bugs can rapidly take over your life and make you miserable. The best bed bug treatment can not only get rid of them but help prevent a future infestation. Here are some tips for getting rid of bed bugs and preventing future problems.</p>
+                        <p>The first step in bed bug control is identifying an affliction. Finding these tiny blood-sucking insects alone isn’t enough; often, they will appear alongside other pests like cockroaches or fleas, meaning it may be difficult to discern between one type of pest and another. A thorough inspection by an expert is important to confirm what kind of insect problem you have before proceeding with bed bug treatment services.</p>
+                        <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
                     </article>
-
-                    <article className="blog-post">
-                        <h2 className="blog-post-title mb-1">Another blog post</h2>
-                        <p className="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
-
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <blockquote>
-                            <p>Longer quote goes here, maybe with some <strong>emphasized text</strong> in the middle of it.</p>
-                        </blockquote>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <h3>Example table</h3>
-                        <p>And don't forget about tables in these posts:</p>
-                        <table className="table">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Upvotes</th>
-                                    <th>Downvotes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Alice</td>
-                                    <td>10</td>
-                                    <td>11</td>
-                                </tr>
-                                <tr>
-                                    <td>Bob</td>
-                                    <td>4</td>
-                                    <td>3</td>
-                                </tr>
-                                <tr>
-                                    <td>Charlie</td>
-                                    <td>7</td>
-                                    <td>9</td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <td>Totals</td>
-                                    <td>21</td>
-                                    <td>23</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-                    </article>
-
-                    <article className="blog-post">
-                        <h2 className="blog-post-title mb-1">New feature</h2>
-                        <p className="blog-post-meta">December 14, 2020 by <a href="#">Chris</a></p>
-
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <ul>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ul>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
-                    </article>
-
-                    <nav className="blog-pagination" aria-label="Pagination">
-                        <a className="btn btn-outline-primary rounded-pill" href="#">Older</a>
-                        <a className="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-                    </nav>
                 </div>
+
+
                 {/* content on the right of the page  */}
                 <div className="col-md-4 taskbar">
                     <div className="position-sticky " style={{ top: "2rem" }}>
@@ -166,7 +97,8 @@ export default function BedBugTreatment() {
                                 ))}
                             </ul>
                         </div>
-
+                        
+                        {/* get a quote form */}
                         <div className="p-4">
                             <h4 className="fst-italic">Archives</h4>
                             <ol className="list-unstyled mb-0">
