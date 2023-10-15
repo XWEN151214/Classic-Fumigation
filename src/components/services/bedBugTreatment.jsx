@@ -3,6 +3,7 @@ import React from "react";
 import "../../App.css";
 import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
+import Contact from "../home/contact";
 
 export default function BedBugTreatment() {
     // useEffect(() => {
@@ -30,35 +31,35 @@ export default function BedBugTreatment() {
             </div>
 
             {/* content on the left of page  */}
-            <div className="row g-5 m-5 ">
-                <div className="col-md-8">
+            <div className="row g-5 m-5">
+                <div className="col-md-8 mb-5">
                     {/* <h3 className="pb-4 mb-4 fst-italic border-bottom">
                         From the Firehose
                     </h3> */}
 
                     <article className="blog-post">
-                        <h2 className="blog-post-title mb-1">BED BUG TREATMENT</h2>
-
+                        <h2 className="blog-post-title mb-1 heading-h2">BED BUG TREATMENT</h2>
+                        <div className="heading-underline container-fluid"></div>
                         <img src={image} alt="" className="img-fluid mb-4 mt-4" />
 
 
                         <p>A1 fumigations are providing bed bug treatment in Karachi at affordable prices. We do bed bug spray for killing them. We use the latest techniques and methods for Bed bug treatment and help you with this problem. Bed bugs are nighttime insects, and they look like cockroaches and ants. They suck your blood at night when you are sleeping. They live so secretively that you cannot detect them at the initial stage.
-                        <br /><br />
-                        Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
+                            <br /><br />
+                            Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
 
                         <h3>Bed Bugs Control</h3>
-                        <ul>
-                            <li>Bed Bugs Control For Residential & Commercial</li>
-                            <li>Bed Bugs Control In Defence Housing Authority</li>
-                            <li>Bed Bugs Fumigation In Karachi</li>
-                            <li>Bed Bugs Control Near me</li>
-                            <li>Bed Bugs Fumigation In Gulshen e Iqbal</li>
-                            <li>Bed Bugs Control In PECHS</li>
-                            <li>Bed Bugs Control In Bahadurabad</li>
-                            <li>Bed Bugs Control In Tariq Road</li>
+                        <ul className="services-list">
+                            <li><p>Bed Bugs Control For Residential & Commercial</p></li>
+                            <li><p>Bed Bugs Control In Defence Housing Authority</p></li>
+                            <li><p>Bed Bugs Fumigation In Karachi</p></li>
+                            <li><p>Bed Bugs Control Near me</p></li>
+                            <li><p>Bed Bugs Fumigation In Gulshen e Iqbal</p></li>
+                            <li><p>Bed Bugs Control In PECHS</p></li>
+                            <li><p>Bed Bugs Control In Bahadurabad</p></li>
+                            <li><p>Bed Bugs Control In Tariq Road</p></li>
                         </ul>
-                        
-                        
+
+
                         <h3>Service Quality</h3>
                         <p>Affordable bed bug treatment is available in Karachi from A1 Fumigations. To get rid of them, we spray for bed bugs. We cure you for bed bugs using the most up-to-date procedures and techniques. Bed bugs are nocturnal insects that resemble ants and cockroaches. When you are resting at night, they take your blood. They dwell in such secrecy that you cannot first find them.</p>
                         <p>Although bed bugs are small, they can pose serious issues for you and your things in your house. Before an infestation gets out of control and you have to toss away all of your furniture and start over with new items, it’s critical to act quickly if you believe bed bugs are in your house. Colors of bed bugs can vary.</p>
@@ -82,43 +83,41 @@ export default function BedBugTreatment() {
                         <p>An infestation of bed bugs can rapidly take over your life and make you miserable. The best bed bug treatment can not only get rid of them but help prevent a future infestation. Here are some tips for getting rid of bed bugs and preventing future problems.</p>
                         <p>The first step in bed bug control is identifying an affliction. Finding these tiny blood-sucking insects alone isn’t enough; often, they will appear alongside other pests like cockroaches or fleas, meaning it may be difficult to discern between one type of pest and another. A thorough inspection by an expert is important to confirm what kind of insect problem you have before proceeding with bed bug treatment services.</p>
                         <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
+
+
+                        {/* <div className="contact-info d-flex justify-content-center align-items-center col-lg-6">
+                            <div className="info box col-lg-8 py-2" id="contact-info-1">
+                                <i className="fa fa-map-marker"></i>
+                                <h6 className="text-center py-4">plot 2 Block # 82380 St Kilda Road, Melbourne, Australia</h6>
+                            </div>
+                            <div className="info box col-lg-8 py-2" id="contact-info-2">
+                                <i className="fa fa-phone"></i>
+                                <h6 className="text-center py-4">+92 300 9206830</h6>
+                            </div>
+                            <div className="info box col-lg-8 py-2" id="contact-info-3">
+                                <i className="fa fa-envelope-open"></i>
+                                <h6 className="text-center py-4">help@bixolcleaning.com</h6>
+                            </div>
+                        </div> */}
                     </article>
                 </div>
 
 
                 {/* content on the right of the page  */}
-                <div className="col-md-4 taskbar">
-                    <div className="position-sticky " style={{ top: "2rem" }}>
+                <div className="col-md-4 taskbar py-5">
+                    <div className="position-sticky " style={{top: "5rem", bottom: "20px"}}>
                         <div className="taskbar-link-list">
                             <h3 className="taskbar-heading">Our Services</h3>
                             <ul className="taskbar-list">
-                                {Services.map((service)=> (
-                                    <li className={`taskbar-links${service.id === 1 ? "-active": ""}`} key={service.id}><Link to={`/services/${service.link}`}>{service.title}</Link></li>
+                                {Services.map((service) => (
+                                    <li className={`taskbar-links${service.id === 1 ? "-active" : ""}`} key={service.id}><Link to={`/services/${service.link}`}>{service.title}</Link></li>
                                 ))}
                             </ul>
-                        </div>
-                        
-                        {/* get a quote form */}
-                        <div className="p-4">
-                            <h4 className="fst-italic">Archives</h4>
-                            <ol className="list-unstyled mb-0">
-                                <li><a href="#">March 2021</a></li>
-                                <li><a href="#">February 2021</a></li>
-                                <li><a href="#">January 2021</a></li>
-                                <li><a href="#">December 2020</a></li>
-                                <li><a href="#">November 2020</a></li>
-                                <li><a href="#">October 2020</a></li>
-                                <li><a href="#">September 2020</a></li>
-                                <li><a href="#">August 2020</a></li>
-                                <li><a href="#">July 2020</a></li>
-                                <li><a href="#">June 2020</a></li>
-                                <li><a href="#">May 2020</a></li>
-                                <li><a href="#">April 2020</a></li>
-                            </ol>
                         </div>
 
                     </div>
                 </div>
+                <Contact/>
             </div>
         </div>
     );

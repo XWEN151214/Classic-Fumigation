@@ -29,7 +29,7 @@ const Footer = () => {
                     <h3>Services</h3>
                 </div>
                 
-                <ul>
+                <ul className="footer-links">
                     {Services.map((service) => (
                         <Link to={`/services/${service.link}`} key={service.id}>
                             <div className="item-b-2">
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div className="box b-3">
                 <h3>Quick Links</h3>
-                <ul>
+                <ul className="footer-links">
                     <Link to="/">
                         <div className="item-b-2">
                             <i className="ri-arrow-right-line"></i>
@@ -59,12 +59,14 @@ const Footer = () => {
                             <i className="ri-arrow-right-line"></i>
                             <li>our clients</li>
                         </div>
-                    </Link><Link href="#">
+                    </Link>
+                    {/* <Link href="#">
                         <div className="item-b-2">
                             <i className="ri-arrow-right-line"></i>
                             <li>get a Quote</li>
                         </div>
-                    </Link><Link to="/contact">
+                    </Link> */}
+                    <Link to="/contact">
                         <div className="item-b-2">
                             <i className="ri-arrow-right-line"></i>
                             <li>contact us</li>

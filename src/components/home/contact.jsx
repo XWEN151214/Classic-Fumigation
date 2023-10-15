@@ -9,7 +9,7 @@ const Contact = () =>
                     <div className="container-fluid d-flex justify-content-center align-items-center py-2">
                         <div className="contact-img col-lg-6">
                             <div className="row d-flex justify-content-center align-items-center">
-                                <h3 className="text-center py-2">Contact Us</h3>
+                                <h3 className="text-center py-2" style={{color: "white"}}>Contact Us</h3>
                                 <img src={email} />
                             </div>
                         </div>
@@ -28,7 +28,7 @@ const Contact = () =>
                                     <input type="tel" class="form-control" placeholder="Phone number" />
                                 </div>
                                 <div className="col-lg-12 py-2">
-                                    <select  class="form-control" name="country">
+                                    <select  class="form-control" id="service-choices" name="country">
                                         <option value="Bed Bug treatment">Bed Bug treatment</option>
                                         <option value="Fumigation Services">Fumigation Services</option>
                                         <option value="Termite Control Services">Termite Control Services</option>
