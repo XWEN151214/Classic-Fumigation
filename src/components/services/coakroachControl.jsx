@@ -5,9 +5,12 @@ import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
 
 export default function CoakroachControl() {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+
     const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
     { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
     { id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
@@ -18,6 +21,8 @@ export default function CoakroachControl() {
     { id: 8, link: "rodent-control", title: "Rodent Control" },
     { id: 9, link: "sofa-cleaning-services", title: "Sofa Cleaning Services" },
     { id: 10, link: "termite-control", title: "Termite Control" }]
+
+    
     return (
         <div>
             {/* black slide  */}
@@ -32,9 +37,6 @@ export default function CoakroachControl() {
             {/* content on the left of page  */}
             <div className="row g-5 m-5 ">
                 <div className="col-md-8">
-                    {/* <h3 className="pb-4 mb-4 fst-italic border-bottom">
-                        From the Firehose
-                    </h3> */}
 
                     <article className="blog-post">
                         <h2 className="blog-post-title mb-1">BED BUG TREATMENT</h2>

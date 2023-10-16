@@ -1,14 +1,21 @@
 import { useEffect } from "react";
 import React from "react";
 import "../../App.css";
+import "../../css/media.css"
 import image from "../../images/bed-bug-treatment.jpeg"
 import { Link } from "react-router-dom";
 import Contact from "../home/contact";
+import image1 from "../../images/bed-bug-1.jpeg"
+import image2 from "../../images/bed-bug-2.jpeg"
+import image3 from "../../images/bed-bug-3.jpeg"
 
 export default function BedBugTreatment() {
+
     // useEffect(() => {
     //     window.scrollTo(0, 0);
     // }, []);
+
+
     const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
     { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
     { id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
@@ -19,6 +26,8 @@ export default function BedBugTreatment() {
     { id: 8, link: "rodent-control", title: "Rodent Control" },
     { id: 9, link: "sofa-cleaning-services", title: "Sofa Cleaning Services" },
     { id: 10, link: "termite-control", title: "Termite Control" }]
+
+
     return (
         <div>
             {/* black slide  */}
@@ -31,11 +40,8 @@ export default function BedBugTreatment() {
             </div>
 
             {/* content on the left of page  */}
-            <div className="row g-5 m-5">
+            <div className="row g-5 mx-5 mt-3 mb-5">
                 <div className="col-md-8 mb-5">
-                    {/* <h3 className="pb-4 mb-4 fst-italic border-bottom">
-                        From the Firehose
-                    </h3> */}
 
                     <article className="blog-post">
                         <h2 className="blog-post-title mb-1 heading-h2">BED BUG TREATMENT</h2>
@@ -44,8 +50,8 @@ export default function BedBugTreatment() {
 
 
                         <p>A1 fumigations are providing bed bug treatment in Karachi at affordable prices. We do bed bug spray for killing them. We use the latest techniques and methods for Bed bug treatment and help you with this problem. Bed bugs are nighttime insects, and they look like cockroaches and ants. They suck your blood at night when you are sleeping. They live so secretively that you cannot detect them at the initial stage.
-                            <br /><br />
-                            Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
+                        <br /><br />
+                        Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
 
                         <h3>Bed Bugs Control</h3>
                         <ul className="services-list">
@@ -82,6 +88,12 @@ export default function BedBugTreatment() {
                         <h3>Effective Bed Bug Control & Prevention:</h3>
                         <p>An infestation of bed bugs can rapidly take over your life and make you miserable. The best bed bug treatment can not only get rid of them but help prevent a future infestation. Here are some tips for getting rid of bed bugs and preventing future problems.</p>
                         <p>The first step in bed bug control is identifying an affliction. Finding these tiny blood-sucking insects alone isn’t enough; often, they will appear alongside other pests like cockroaches or fleas, meaning it may be difficult to discern between one type of pest and another. A thorough inspection by an expert is important to confirm what kind of insect problem you have before proceeding with bed bug treatment services.</p>
+
+                        <div className="image-container">
+                            <img src={image1} alt="" className="image-fluid"/>
+                            <img src={image2} alt="" className="image-fluid"/>
+                            <img src={image3} alt="" className="image-fluid"/>
+                        </div>
                     </article>
                 </div>
 
@@ -103,7 +115,7 @@ export default function BedBugTreatment() {
             </div>
 
 
-            <div className="container-fluid px-5 py-2">
+            <div className="container-fluid px-5 py-2" id="contact-heading">
                 <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
             </div>
             <Contact />

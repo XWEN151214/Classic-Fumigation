@@ -47,9 +47,34 @@
     margin-top: 3rem;
   }
 
+  .row {
+    margin: 0 100px;
+  }
+
+  .services-list li p {
+    display: inline;
+  }
+
   .ftr
   {
     flex-direction: column;
+  }
+
+  #contact-div {
+    display: block;
+  }
+
+  .image-container {
+    display: block;
+    margin: 9px 0 -30px -50px;
+  }
+  
+  .image-container img {
+    margin: 20px 50px 0;
+  }
+
+  .taskbar {
+    display: none;
   }
 } 
 

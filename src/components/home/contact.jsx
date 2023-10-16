@@ -1,11 +1,13 @@
 import React from "react";
 import email from "../../images/email.png";
+import "../../App.css";
+import "../../css/media.css"
 
 const Contact = () =>
 {
     return (
             <div className="contact">
-                <div className="row d-flex justify-content-center align-items-center py-2">
+                <div className="row d-flex justify-content-center align-items-center py-2" id="contact-div">
                     <div className="container-fluid d-flex justify-content-center align-items-center py-2">
                         <div className="contact-img col-lg-6">
                             <div className="row d-flex justify-content-center align-items-center">

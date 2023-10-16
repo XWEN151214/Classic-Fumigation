@@ -278,6 +278,23 @@ button:hover {
   display: inline-block;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  /* padding: 20px; */
+  margin: 50px 0 0 70px;
+}
+
+.image-container img {
+  border: 1px solid var(--heading-services);
+  border-radius: 3px;
+  /* aspect-ratio: 1; */
+  height: 200px;
+  width: 240px;
+  margin: 0 10px;
+}
+
 .taskbar {
   background-color: var(--primary);
   padding-top: 10px;
@@ -303,6 +320,7 @@ button:hover {
   border-bottom: 2px solid var(--secondary);
   width: 70%;
 }
+
 .taskbar-links a {
   text-decoration: none;
   color: var(--primary-light);
@@ -335,8 +353,13 @@ button:hover {
 
 .taskbar-links a:hover {
 }
+
 .taskbar-links-active:hover {
   font-weight: 500;
+}
+
+#contact-heading {
+  color: var(--heading-services);
 }
 
 /* contact */
@@ -385,6 +408,7 @@ button:hover {
   color: var(--primary-light);
   border-radius: 0;
   border-bottom: 2px var(--secondary) solid;
+  caret-color: var(--secondary);
 }
 
 .contact form input:focus,
