@@ -82,30 +82,13 @@ export default function BedBugTreatment() {
                         <h3>Effective Bed Bug Control & Prevention:</h3>
                         <p>An infestation of bed bugs can rapidly take over your life and make you miserable. The best bed bug treatment can not only get rid of them but help prevent a future infestation. Here are some tips for getting rid of bed bugs and preventing future problems.</p>
                         <p>The first step in bed bug control is identifying an affliction. Finding these tiny blood-sucking insects alone isn’t enough; often, they will appear alongside other pests like cockroaches or fleas, meaning it may be difficult to discern between one type of pest and another. A thorough inspection by an expert is important to confirm what kind of insect problem you have before proceeding with bed bug treatment services.</p>
-                        <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
-
-
-                        {/* <div className="contact-info d-flex justify-content-center align-items-center col-lg-6">
-                            <div className="info box col-lg-8 py-2" id="contact-info-1">
-                                <i className="fa fa-map-marker"></i>
-                                <h6 className="text-center py-4">plot 2 Block # 82380 St Kilda Road, Melbourne, Australia</h6>
-                            </div>
-                            <div className="info box col-lg-8 py-2" id="contact-info-2">
-                                <i className="fa fa-phone"></i>
-                                <h6 className="text-center py-4">+92 300 9206830</h6>
-                            </div>
-                            <div className="info box col-lg-8 py-2" id="contact-info-3">
-                                <i className="fa fa-envelope-open"></i>
-                                <h6 className="text-center py-4">help@bixolcleaning.com</h6>
-                            </div>
-                        </div> */}
                     </article>
                 </div>
 
 
                 {/* content on the right of the page  */}
                 <div className="col-md-4 taskbar py-5">
-                    <div className="position-sticky " style={{top: "5rem", bottom: "20px"}}>
+                    <div className="position-sticky " style={{ top: "5rem", bottom: "20px" }}>
                         <div className="taskbar-link-list">
                             <h3 className="taskbar-heading">Our Services</h3>
                             <ul className="taskbar-list">
@@ -114,11 +97,16 @@ export default function BedBugTreatment() {
                                 ))}
                             </ul>
                         </div>
-
                     </div>
                 </div>
-                <Contact/>
+
             </div>
+
+
+            <div className="container-fluid px-5 py-2">
+                <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
+            </div>
+            <Contact />
         </div>
     );
 }
