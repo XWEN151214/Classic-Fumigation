@@ -8,7 +8,7 @@ const ServiceBox = () => {
         <div className="service-box py-4">
             <h3 className="text-center py-2">Our Services</h3>
             <div className="row justify-content-center align-items-center">
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-right" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={bugs} />
                     </div>
@@ -19,7 +19,7 @@ const ServiceBox = () => {
                         </p>
                     </div>
                 </div>
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-up" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={bugs} />
                     </div>
@@ -30,7 +30,7 @@ const ServiceBox = () => {
                         </p>
                     </div>
                 </div>
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-left" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={mosquito} />
                     </div>
@@ -43,7 +43,7 @@ const ServiceBox = () => {
                 </div>
             </div>
             <div className="row justify-content-center align-items-center py-2">
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-right" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={bugs} />
                     </div>
@@ -54,7 +54,7 @@ const ServiceBox = () => {
                         </p>
                     </div>
                 </div>
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-up" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={bugs} />
                     </div>
@@ -65,7 +65,7 @@ const ServiceBox = () => {
                         </p>
                     </div>
                 </div>
-                <div className="box d-flex justify-content-center py-2 px-2">
+                <div className="box d-flex justify-content-center py-2 px-2" data-aos="fade-left" data-aos-duration="800">
                     <div className="service-img d-flex justify-content-center py-2">
                         <img src={disinfection} />
                     </div>

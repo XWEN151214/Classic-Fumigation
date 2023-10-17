@@ -9,10 +9,20 @@ import BedBugTreatment from './components/services/bedBugTreatment';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import './css/media.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 import { Route, Routes } from 'react-router-dom'; 
 import { BrowserRouter } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+	useState(
+				()=>
+				{
+					AOS.init();
+					AOS.refresh();
+				}
+			)
 	return (
 		<>
 			<BrowserRouter>
