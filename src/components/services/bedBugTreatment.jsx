@@ -49,43 +49,20 @@ export default function BedBugTreatment() {
                         <img src={image} alt="" className="img-fluid mb-4 mt-4"/>
                         
 
-                        <h2>Blockquotes</h2>
-                        <p>This is an example blockquote in action:</p>
-                        <blockquote className="blockquote">
-                            <p>Quoted text goes here.</p>
-                        </blockquote>
-                        <p>This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
-                        <h3>Example lists</h3>
-                        <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout. This is an example unordered list:</p>
-                        <ul>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ul>
-                        <p>And this is an ordered list:</p>
-                        <ol>
-                            <li>First list item</li>
-                            <li>Second list item with a longer description</li>
-                            <li>Third list item to close it out</li>
-                        </ol>
-                        <p>And this is a definition list:</p>
-                        <dl>
-                            <dt>HyperText Markup Language (HTML)</dt>
-                            <dd>The language used to describe and define the content of a Web page</dd>
-                            <dt>Cascading Style Sheets (CSS)</dt>
-                            <dd>Used to describe the appearance of Web content</dd>
-                            <dt>JavaScript (JS)</dt>
-                            <dd>The programming language used to build advanced Web sites and applications</dd>
-                        </dl>
-                        <h2>Inline HTML elements</h2>
-                        <p>HTML defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-                        <ul>
-                            <li><strong>To bold text</strong>, use <code className="language-plaintext highlighter-rouge">&lt;strong&gt;</code>.</li>
-                            <li><em>To italicize text</em>, use <code className="language-plaintext highlighter-rouge">&lt;em&gt;</code>.</li>
-                            <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should use <code className="language-plaintext highlighter-rouge">&lt;abbr&gt;</code>, with an optional <code className="language-plaintext highlighter-rouge">title</code> attribute for the full phrase.</li>
-                            <li>Citations, like <cite>— Mark Otto</cite>, should use <code className="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-                            <li><del>Deleted</del> text should use <code className="language-plaintext highlighter-rouge">&lt;del&gt;</code> and <ins>inserted</ins> text should use <code className="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-                            <li>Superscript <sup>text</sup> uses <code className="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code className="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
+                        <p>A1 fumigations are providing bed bug treatment in Karachi at affordable prices. We do bed bug spray for killing them. We use the latest techniques and methods for Bed bug treatment and help you with this problem. Bed bugs are nighttime insects, and they look like cockroaches and ants. They suck your blood at night when you are sleeping. They live so secretively that you cannot detect them at the initial stage.
+                            <br /><br />
+                            Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
+
+                        <h3>Bed Bugs Control</h3>
+                        <ul className="services-list">
+                            <li><p>Bed Bugs Control For Residential & Commercial</p></li>
+                            <li><p>Bed Bugs Control In Defence Housing Authority</p></li>
+                            <li><p>Bed Bugs Fumigation In Karachi</p></li>
+                            <li><p>Bed Bugs Control Near me</p></li>
+                            <li><p>Bed Bugs Fumigation In Gulshen e Iqbal</p></li>
+                            <li><p>Bed Bugs Control In PECHS</p></li>
+                            <li><p>Bed Bugs Control In Bahadurabad</p></li>
+                            <li><p>Bed Bugs Control In Tariq Road</p></li>
                         </ul>
 
 
@@ -112,6 +89,7 @@ export default function BedBugTreatment() {
                         <p>An infestation of bed bugs can rapidly take over your life and make you miserable. The best bed bug treatment can not only get rid of them but help prevent a future infestation. Here are some tips for getting rid of bed bugs and preventing future problems.</p>
                         <p>The first step in bed bug control is identifying an affliction. Finding these tiny blood-sucking insects alone isn’t enough; often, they will appear alongside other pests like cockroaches or fleas, meaning it may be difficult to discern between one type of pest and another. A thorough inspection by an expert is important to confirm what kind of insect problem you have before proceeding with bed bug treatment services.</p>
 
+
                         <div className="image-container">
                             <img src={image1} alt="" className="image-fluid"/>
                             <img src={image2} alt="" className="image-fluid"/>
@@ -123,7 +101,7 @@ export default function BedBugTreatment() {
 
                 {/* content on the right of the page  */}
                 <div className="col-md-4 taskbar py-5">
-                    <div className="position-sticky " style={{ top: "5rem", bottom: "20px" }}>
+                    <div className="position-sticky" style={{ top: "5rem", bottom: "20px" }}>
                         <div className="taskbar-link-list">
                             <h3 className="taskbar-heading">Our Services</h3>
                             <ul className="taskbar-list">
