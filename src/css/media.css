@@ -93,24 +93,17 @@
     margin-top: 3rem;
   }
 
-  .ftr
-  {
-    flex-direction: column;
+  .row {
+    margin: 0 100px;
   }
 
-  .contact .form-container
-  {
-    width: 100%;
-  }
-
-  .packages .row
-  {
+  .services-list li p {
     display: inline;
   }
 
-  .packages .box
+  .ftr
   {
-    margin-top: 3rem;
+    flex-direction: column;
   }
 } 
 
