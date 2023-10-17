@@ -11,6 +11,7 @@ html
 body
 {
   width: 100%;
+  overflow-x: hidden;
 }
 
 :root
@@ -18,6 +19,7 @@ body
   --primary: #132d46;
   --primary-light: #ffff;
   --secondary: #0ec090;
+  --gradient: linear-gradient(to right, #0ec090, #132d46);
 }
 
 ul
@@ -54,15 +56,16 @@ button:hover
 
 .nav-info
 {
-  background-color: var(--secondary);
+  background-image: var(--gradient);
+  justify-content: center;
 }
 
 .nav-info li
 {
   background-color: var(--primary);
   border-radius: 100%;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .nav-info li:hover
@@ -82,21 +85,50 @@ button:hover
   text-decoration: none;
 }
 
+.nav-info .social-mail
+{
+  width: 50%;
+  position: relative;
+}
+
+.nav-info .social-mail p
+{
+  color: #fff;
+  right: 1rem;
+  position: absolute;
+}
+
+.nav-info .social-mail i
+{
+  position: absolute;
+  right: 13rem;
+}
+
+.nav-info .social-icons
+{
+  width: 50%;
+}
+
 .nav-info i
 {
   color: var(--primary-light);
-  font-size: 1.5rem;
+  font-size: 1rem;
+}
+
+nav
+{
+  background-color: var(--primary);
 }
 
 .navbar-header a
 {
-  color: var(--primary);
+  color: #fff;
   font-weight: bold;
 }
 
 .nav a
 {
-  color: var(--primary);
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -140,7 +172,7 @@ button:hover
 
 .menu-btn i
 {
-  color: var(--primary);
+  color: #fff;
   font-size: 1.5rem
 }
 
@@ -195,6 +227,7 @@ button:hover
   object-fit: cover;
   width: 100%;
   height: 30rem;
+  position: relative;
 }
 
 .carousel .controllers
@@ -239,7 +272,8 @@ button:hover
   color: var(--primary);
 }
 
-.service-box h5
+.service-box h5,
+.service-box p
 {
   color: var(--secondary)
 }
@@ -248,10 +282,23 @@ button:hover
 {
   width: 18rem;
   flex-direction: column;
-  border: 3px var(--primary) solid;
+  background-color: var(--primary);
   border-radius: 10px;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.service-box .box:hover
+{
+  background-color: var(--secondary);
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.service-box .box:hover h5,
+.service-box .box:hover p
+{
+  color: #fff;
 }
 
 .service-box .row
@@ -288,12 +335,13 @@ button:hover
 {
   background-color: #132d468c;
   height: 100%;
+  width: 50%;
   margin-top: 0;
 }
 
 .contact img
 {
-  width: 30rem;
+  width: 90%;
 }
 
 .contact form input,
@@ -343,6 +391,8 @@ button:hover
   background-color: var(--primary);
   height: 16rem;
   width: 16rem;
+  margin-left: 3%;
+  margin-right: 3%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -357,9 +407,215 @@ button:hover
 
 .contact .contact-info h6,
 .contact .contact-info p,
-.contact .contact-info h3
+.contact h3
 {
   color: #fff;
+}
+
+/* packages */
+.packages h3,
+.packages h5,
+.packages h6
+{
+  color: var(--primary);
+}
+
+.packages .box
+{
+  width: 16rem;
+  box-shadow: 5px 5px 5px 5px #4d4d4da8;
+  position: relative;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.packages .box:hover
+{
+  transform: scale(1.1);
+}
+
+.packages .box i
+{
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.packages .btn
+{
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.packages .btn:hover
+{
+  background-color: #66fdd5;
+}
+
+/* clients */
+
+.clients img
+{
+  width: 30%;
+}
+
+.clients h3
+{
+  color: var(--primary);
+}
+
+.clients marquee
+{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* testimonials */
+
+.testimonials
+{
+  position: relative;
+  background-image: url(./images/cover3.png);
+  background-size: cover;
+}
+
+.testimonials h3
+{
+  color: var(--secondary);
+}
+
+.testimonials .box
+{
+  width: 50rem;
+  height: 22rem;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+
+.testimonials .box .bg
+{
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials .box .bg img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.testimonials .controllers
+{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.testimonials .controllers i
+{
+  color: var(--secondary);
+  font-size: 2rem;
+}
+
+.testimonials .controllers .right
+{
+  position: absolute;
+  right: 1rem;
+}
+
+.testimonials .controllers .left
+{
+  position: absolute;
+  left: 1rem;
+}
+
+.testimonials .box .content
+{
+  position: absolute;
+  z-index: 10;
+}
+
+.testimonials .box .content i
+{
+  color: var(--secondary);
+  font-size: 2rem;
+}
+
+.testimonials .box .content i:hover
+{
+  color: var(--primary-light);
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+.testimonials .box .content p
+{
+  color: var(--secondary);
+}
+
+.testimonials .box .content img
+{
+  width: 25%;
+  border-radius: 100%;
+  border: 3px #ffff solid;
+}
+
+/* about */
+
+.about .content img
+{
+  width: 30rem;
+}
+
+.about .main-header
+{
+  background-image: url(./images/cover5.png);
+  background-size: cover;
+  height: 18rem;
+}
+
+.about .main-header .container-fluid
+{
+  background-color: #0000004d;
+}
+
+.about .main-header .container-fluid h3
+{
+  color: #fff;
+}
+
+.about h3
+{
+  color: var(--primary);
+}
+
+.cores
+{
+  background-color: var(--primary);
+}
+
+.cores .tabs li
+{
+  color: var(--secondary);
+  font-weight: 500;
+}
+
+.cores .tabs li:active
+{
+  border-bottom: 2px var(--secondary) solid;
+}
+
+.cores .core .content
+{
+  padding-left: 2rem;
+}
+
+.cores .core img
+{
+  width: 20rem;
 }
 
 /* footer */
@@ -380,6 +636,12 @@ button:hover
 .ftr a
 {
   text-decoration: none;
+}
+
+.ftr a:hover
+{
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .box
@@ -469,3 +731,17 @@ li{
   margin-top: 2rem;
 }
 
+/* Keyframes */
+
+@keyframes slide-in {
+
+  from
+  {
+      left: -40rem;
+  }
+
+  to
+  {
+      left: 0rem;
+  }   
+}

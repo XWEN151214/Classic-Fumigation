@@ -24,10 +24,7 @@ export default function BedBugTreatment() {
 
                     <article className="blog-post">
                         <h2 className="blog-post-title mb-1">BED BUG TREATMENT</h2>
-                        
                         <img src={image} alt="" className="img-fluid mb-4 mt-4"/>
-                        
-
                         <h2>Blockquotes</h2>
                         <p>This is an example blockquote in action:</p>
                         <blockquote className="blockquote">
