@@ -9,7 +9,7 @@ const Packages = () =>
             <div className="packages">
                 <h3 className="text-center py-2 mt-4">Packages</h3>
                 <div className="row d-flex justify-content-center align-items-center py-4">
-                    <div className="box d-flex justify-content-center py-4"  data-aos="fade-down" data-aos-duration="800">
+                    <div className="box d-flex justify-content-center py-4"  data-aos="fade-down" data-aos-duration="800"  id="package-row">
                         <div className="package-img d-flex justify-content-center m-0 p-0">
                             <i className="fa fa-briefcase"></i>
                         </div>
@@ -22,7 +22,7 @@ const Packages = () =>
                             <button className="btn">Book Now</button>
                         </div>
                     </div>
-                    <div className="box d-flex justify-content-center py-4" data-aos="fade-down" data-aos-duration="800">
+                    <div className="box d-flex justify-content-center py-4" data-aos="fade-down" data-aos-duration="800" id="package-row">
                         <div className="package-img d-flex justify-content-center m-0 p-0">
                             <i className="fa fa-industry"></i>
                         </div>
@@ -35,7 +35,7 @@ const Packages = () =>
                             <button className="btn">Book Now</button>
                         </div>
                     </div>
-                    <div className="box d-flex justify-content-center py-4" data-aos="fade-down" data-aos-duration="800">
+                    <div className="box d-flex justify-content-center py-4" data-aos="fade-down" data-aos-duration="800" id="package-row">
                         <div className="package-img d-flex justify-content-center m-0 p-0">
                             <i className="fa fa-building"></i>
                         </div>

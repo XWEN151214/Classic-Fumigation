@@ -18,7 +18,7 @@ const Footer = () =>
                         <div>
                             <h3>Services</h3>
                         </div>
-                        <ul>
+                        <ul className="footer-links">
                             <a href="#">
                                 <div className="item-b-2">
                                     <i className="ri-arrow-right-line"></i>
@@ -66,7 +66,7 @@ const Footer = () =>
                     </div>
                     <div className="box b-3">
                     <h3>Quick Links</h3>
-                    <ul>
+                    <ul className="footer-links">
                         <a href="#">
                             <div className="item-b-2">
                                 <i className="ri-arrow-right-line"></i>

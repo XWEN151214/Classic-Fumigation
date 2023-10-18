@@ -20,7 +20,7 @@ const About = () =>
                     </div>
                     <div className="content row d-flex justify-content-center align-items-center mt-4 py-2 px-4">
                         <div className="d-flex justify-content-center col-lg-6 px-4">
-                            <div className="col-lg-12">
+                            <div className="col-lg-12" data-aos="fade-up" data-aos-duration="800">
                                 <h3 className="py-2">
                                     Introduction
                                 </h3>
@@ -29,7 +29,7 @@ const About = () =>
                                 </p>
                             </div>
                         </div>
-                        <div className="d-flex justify-content-center col-lg-6">
+                        <div className="d-flex justify-content-center col-lg-6" data-aos="fade-down" data-aos-duration="800">
                             <img src={cover} />
                         </div>
                     </div>
@@ -44,8 +44,8 @@ const About = () =>
                             <div className="core">
                                 <div className="row d-flex justify-content-center align-items-center py-2">
                                     <div className="content col-lg-6" data-aos="fade-left" data-aos-duration="800">
-                                        <h3 className="py-2" style={{color:'white'}}>Our Mission</h3>
-                                        <p className="py-2" style={{color:'white'}}>
+                                        <h3 className="py-2">Our Mission</h3>
+                                        <p className="py-2">
                                         At classic fumigation, our mission is to provide unparalleled fumigation services aimed at creating pest-free spaces for our clients. We are committed to safeguarding homes and businesses, prioritizing the health and well-being of our communities. Through cutting-edge techniques, environmentally responsible practices, and a dedicated team of experts, we strive to exceed expectations in delivering effective, safe, and reliable pest control solutions. Our mission is to ensure that every space we treat becomes a sanctuary, free from the nuisances of pests, contributing to a healthier and happier environment for all
                                         </p>
                                     </div>
@@ -58,23 +58,19 @@ const About = () =>
                             <div className="core">
                                 <div className="row d-flex justify-content-center align-items-center py-2">
                                     <div className="content col-lg-6">
-                                        <h3 className="py-2" style={{color:'white'}}>Our Values</h3>
-                                        <p className="py-2" style={{color:'white'}}>
+                                        <h3 className="py-2">Our Values</h3>
+                                        <p className="py-2">
                                             At classic fumigation, our values define who we are and guide every aspect of our fumigation services:
                                         </p>
-                                        <p style={{color:'white'}}>
+                                        <p>
                                             <strong>Excellence: </strong>
                                             We are committed to delivering the highest standards of service, consistently exceeding customer expectations through precision and professionalism.
                                         </p>
-                                        <p style={{color:'white'}}>
+                                        <p>
                                             <strong>Integrity: </strong>
                                             We conduct our business with honesty, transparency, and accountability, building trust with our clients and stakeholders.
                                         </p>
-                                        <p style={{color:'white'}}>
-                                            <strong>Customer-Centric: </strong>
-                                            Our clients are at the heart of everything we do. We listen, understand, and tailor our solutions to meet their unique needs, ensuring satisfaction and peace of mind.
-                                        </p>
-                                        <p style={{color:'white'}}>
+                                        <p>
                                             <strong>Environmental Responsibility: </strong>
                                             We prioritize eco-friendly practices, striving to minimize our ecological footprint and contribute to a healthier planet.
                                         </p>
@@ -88,8 +84,8 @@ const About = () =>
                             <div className="core">
                                  <div className="row d-flex justify-content-center align-items-center py-2">
                                     <div className="content col-lg-6">
-                                        <h3 className="py-2" style={{color:'white'}}>Our Vision</h3>
-                                        <p className="py-2" style={{color:'white'}}>
+                                        <h3 className="py-2">Our Vision</h3>
+                                        <p className="py-2">
                                         At classic fumigation, our vision is to be the leading force in innovative and sustainable pest control solutions. We aspire to set new industry standards by continually advancing our fumigation techniques, embracing eco-friendly practices, and promoting public awareness about the importance of pest management. We envision a future where every home and business enjoys a pest-free environment, fostering healthier, safer, and more comfortable living spaces. Through our unwavering commitment to excellence, technological advancement, and environmental stewardship, we aim to be the trusted partner in creating pest-free havens, enhancing the overall quality of life for our clients and communities.
                                         </p>
                                     </div>

@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect} from "react";
 import test from "../../images/test.webp";
-import cover2 from "../../images/cover2.png";
-
 
 const next = (middleSlide, setMiddleSlide) =>
 {
@@ -54,14 +52,6 @@ const Testimonials = () =>
                     <div className="testimonial-box box d-flex justify-content-center align-items-center p-0 mx-3">
                         <div className="content d-flex justify-content-center align-items-center">
                             <div className="col-lg-6">
-                                <div className="image d-flex justify-content-center mt-2">
-                                    <img src={content[middleSlide].picture}/>
-                                </div>
-                                <div className="details py-1">
-                                    <p className="text-center py-2">{content[middleSlide].name}</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
                                 <div className="text py-2">
                                     <p className="text-center py-2 px-3">
                                     &quot; {content[middleSlide].p}
@@ -83,6 +73,14 @@ const Testimonials = () =>
                                           <i className="fa fa-linkedin"></i>
                                         </a>
                                     </li>
+                                </div>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className="image d-flex justify-content-center">
+                                    <img src={content[middleSlide].picture}/>
+                                </div>
+                                <div className="details py-1">
+                                    <p className="text-center py-2">{content[middleSlide].name}</p>
                                 </div>
                             </div>
                         </div>

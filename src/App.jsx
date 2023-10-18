@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
 import Home from "./components/home";
 import About from "./components/about";
 import Navbar from './components/Navbar';
 import Clients from './components/clients';
 import Contact from './components/contact';
 import BedBugTreatment from './components/services/bedBugTreatment';
+import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
+import 'bootstrap/js/dist/carousel'
 import 'font-awesome/css/font-awesome.min.css';
 import './css/media.css'
 import AOS from 'aos';
@@ -34,6 +37,7 @@ function App() {
 					<Route path='/clients' element={<Clients />} />
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</>
 	);
