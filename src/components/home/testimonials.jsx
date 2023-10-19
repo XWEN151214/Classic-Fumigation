@@ -1,8 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import test from "../../images/test.webp";
-import cover2 from "../../images/cover2.png";
-
 
 const next = (middleSlide, setMiddleSlide) => {
     middleSlide + 1 < content.length
@@ -36,33 +34,6 @@ const content = [
 
 const Testimonials = () => {
     const [middleSlide, setMiddleSlide] = useState(0);
-<<<<<<< Updated upstream
-    return(
-            <div className="testimonials mt-4">
-                <h3 className="text-center py-2">Testimonials</h3>
-                <div className="controllers container-fluid d-flex justify-content-center align-items-center">
-                    <span className="left">
-                        <i className="fa fa-arrow-circle-left" onClick={()=>prev(middleSlide, setMiddleSlide)}></i>
-                    </span>
-                    <span className="right">
-                        <i className="fa fa-arrow-circle-right" onClick={()=>next(middleSlide, setMiddleSlide)}></i>
-                    </span>
-                </div>
-                <div className="slider container-fluid d-flex justify-content-center px-4" data-aos="fade-right" data-aos-duration="1100">
-                    <div className="testimonial-box box d-flex justify-content-center align-items-center p-0 mx-3">
-                        <div className="content d-flex justify-content-center align-items-center">
-                            <div className="col-lg-6">
-                                <div className="image d-flex justify-content-center mt-2">
-                                    <img src={content[middleSlide].picture}/>
-                                </div>
-                                <div className="details py-1">
-                                    <p className="text-center py-2">{content[middleSlide].name}</p>
-                                </div>
-                            </div>
-                            <div className="col-lg-6">
-                                <div className="text py-2">
-                                    <p className="text-center py-2 px-3">
-=======
     return (
         <div className="testimonials mt-4">
             <h3 className="text-center py-2">Testimonials</h3>
@@ -80,12 +51,9 @@ const Testimonials = () => {
                         <div className="col-lg-6">
                             <div className="text py-2">
                                 <p className="text-center py-2 px-3">
->>>>>>> Stashed changes
                                     &quot; {content[middleSlide].p}
                                 </p>
                             </div>
-<<<<<<< Updated upstream
-=======
                             <div className="social-links d-flex justify-content-center">
                                 <li className="social-link d-flex justify-content-center align-items-center mx-3">
                                     <a href="#">
@@ -111,7 +79,6 @@ const Testimonials = () => {
                             <div className="details py-1">
                                 <p className="text-center py-2">{content[middleSlide].name}</p>
                             </div>
->>>>>>> Stashed changes
                         </div>
                     </div>
                 </div>

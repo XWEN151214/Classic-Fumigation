@@ -158,6 +158,21 @@
     padding-bottom: 4rem;
     margin-top: 2rem;
   }
+
+  .carousel .slides .container-fluid .header-content
+  {
+    margin-left: 20%;
+  }
+
+  .testimonials .box .content img
+  {
+    margin-top: 3rem;
+  }
+
+  .dropmenu
+  {
+    background-color: var(--tertiary);
+  }
 }
 
 @media screen and (max-width: 375px) 

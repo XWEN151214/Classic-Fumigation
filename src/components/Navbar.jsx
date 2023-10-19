@@ -63,15 +63,9 @@ const Navbar = () => {
                             <span className="caret"></span>
                         </a>
                         {
-<<<<<<< Updated upstream
-                            isDropped ? <div className="dropmenu">
-                                 {Services.map((service) => (
-                                    <li className="py-1 px-3" key={service.id}>
-=======
                             isDropped ? <div className="dropmenu pb-2">
                                 {Services.map((service) => (
                                     <li className="px-3" key={service.id}>
->>>>>>> Stashed changes
                                         <Link to={`/services/${service.link}`}>{service.title}</Link>
                                     </li>
                                 ))}
@@ -84,11 +78,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="menu-btn">
-<<<<<<< Updated upstream
-                    <i className="fa fa-bars" onClick={() => setNavOpen(!navOpen)}></i>
-=======
                     <i className={navOpen ? "fa fa-window-close" : "fa fa-bars"} onClick={() => setNavOpen(!navOpen)}></i>
->>>>>>> Stashed changes
                 </div>
             </div>
             {
@@ -96,10 +86,10 @@ const Navbar = () => {
                     <div className="mobile-navbar h-100">
                         <div className="mobile-nav py-2 px-2">
                             <li className="mx-3 mt-3">
-                                <Link to="/">Home</Link>
+                                <Link to="/" onClick={() => setNavOpen(!navOpen)}>Home</Link>
                             </li>
                             <li className="mx-3 mt-3">
-                                <Link to="/about">About Us</Link>
+                                <Link to="/about" onClick={() => setNavOpen(!navOpen)}>About Us</Link>
                             </li>
                             <li className="mx-3 mt-3" onClick={() => showDropDown(isDropped, setIsDropped)}>
                                 <a className="dropdown-toggle" href="#">
@@ -107,21 +97,6 @@ const Navbar = () => {
                                     <span className="caret"></span>
                                 </a>
                                 {
-<<<<<<< Updated upstream
-                                    isDropped ? <div className="mobile-dropmenu py-2">
-                                        <li className="py-1">
-                                            <Link to="/services/bed-bug-treatment">Bed Bug Treatment</Link>
-                                        </li>
-                                        <li className="py-1">
-                                            <a href="#">Page 1-2</a>
-                                        </li>
-                                        <li className="py-1">
-                                            <a href="#">Page 1-3</a>
-                                        </li>
-                                    </div>
-                                        : <></>
-                                }
-=======
 
                                     isDropped ? <div className=" pb-2">
                                         {Services.map((service) => (
@@ -133,13 +108,12 @@ const Navbar = () => {
                                         : <></>
                                 }
 
->>>>>>> Stashed changes
                             </li>
                             <li className="mx-3 mt-3">
-                                <Link to="/clients">Clients</Link>
+                                <Link to="/clients" onClick={() => setNavOpen(!navOpen)}>Clients</Link>
                             </li>
                             <li className="mx-3 mt-3">
-                                <Link to="/contact">Contact Us</Link>
+                                <Link to="/contact" onClick={() => setNavOpen(!navOpen)}>Contact Us</Link>
                             </li>
                         </div>
                     </div>
