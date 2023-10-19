@@ -43,7 +43,7 @@ const Navbar = () => {
                     </li>
                 </div>
                 <div className="social-mail d-flex align-items-center col-lg-6">
-                    <div className="d-flex align-items-center m-0 p-0"> 
+                    <div className="d-flex align-items-center m-0 p-0">
                         <i className="fa fa-envelope m-0"></i>
                         <p className="p-0 m-0">help@bixolcleaning.com</p>
                     </div>
@@ -63,9 +63,15 @@ const Navbar = () => {
                             <span className="caret"></span>
                         </a>
                         {
+<<<<<<< Updated upstream
                             isDropped ? <div className="dropmenu">
                                  {Services.map((service) => (
                                     <li className="py-1 px-3" key={service.id}>
+=======
+                            isDropped ? <div className="dropmenu pb-2">
+                                {Services.map((service) => (
+                                    <li className="px-3" key={service.id}>
+>>>>>>> Stashed changes
                                         <Link to={`/services/${service.link}`}>{service.title}</Link>
                                     </li>
                                 ))}
@@ -78,7 +84,11 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="menu-btn">
+<<<<<<< Updated upstream
                     <i className="fa fa-bars" onClick={() => setNavOpen(!navOpen)}></i>
+=======
+                    <i className={navOpen ? "fa fa-window-close" : "fa fa-bars"} onClick={() => setNavOpen(!navOpen)}></i>
+>>>>>>> Stashed changes
                 </div>
             </div>
             {
@@ -97,6 +107,7 @@ const Navbar = () => {
                                     <span className="caret"></span>
                                 </a>
                                 {
+<<<<<<< Updated upstream
                                     isDropped ? <div className="mobile-dropmenu py-2">
                                         <li className="py-1">
                                             <Link to="/services/bed-bug-treatment">Bed Bug Treatment</Link>
@@ -110,6 +121,19 @@ const Navbar = () => {
                                     </div>
                                         : <></>
                                 }
+=======
+
+                                    isDropped ? <div className=" pb-2">
+                                        {Services.map((service) => (
+                                            <li className="px-3" key={service.id}>
+                                                <Link to={`/services/${service.link}`} onClick={() => setNavOpen(!navOpen)}>{service.title}</Link>
+                                            </li>
+                                        ))}
+                                    </div>
+                                        : <></>
+                                }
+
+>>>>>>> Stashed changes
                             </li>
                             <li className="mx-3 mt-3">
                                 <Link to="/clients">Clients</Link>

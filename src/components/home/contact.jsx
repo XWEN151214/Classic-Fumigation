@@ -1,11 +1,16 @@
 import React from "react";
 import email from "../../images/email.png";
 
-const Contact = () =>
-{
+const Contact = () => {
     return (
+<<<<<<< Updated upstream
             <div className="contact" id="contact">
                 <div className="row d-flex justify-content-center align-items-center py-2">
+=======
+        <section id="contact">
+            <div className="contact mx-4">
+                <div className="row d-flex justify-content-center align-items-center">
+>>>>>>> Stashed changes
                     <div className="container-fluid d-flex justify-content-center align-items-center py-2">
                         <div className="contact-img col-lg-6">
                             <div className="contact-heading row d-flex justify-content-center align-items-center" data-aos="fade-right" data-aos-duration="1000">
@@ -28,7 +33,7 @@ const Contact = () =>
                                     <input type="tel" class="form-control" placeholder="Phone number" />
                                 </div>
                                 <div className="col-lg-12 py-2">
-                                    <select  class="form-control" name="country">
+                                    <select className="form-control" name="country">
                                         <option value="Bed Bug treatment">Bed Bug treatment</option>
                                         <option value="Fumigation Services">Fumigation Services</option>
                                         <option value="Termite Control Services">Termite Control Services</option>
@@ -42,7 +47,7 @@ const Contact = () =>
                                     </select>
                                 </div>
                                 <div className="col-lg-12 py-2">
-                                    <textarea rows="3" class="form-control " id="validationTextarea" placeholder="Message.."  required></textarea>
+                                    <textarea rows="3" class="form-control " id="validationTextarea" placeholder="Message.." required></textarea>
                                 </div>
                                 <div className="col-lg-12 d-flex justify-content-center py-2">
                                     <buttton className="btn">Submit</buttton>
@@ -66,7 +71,8 @@ const Contact = () =>
                     </div>
                 </div>
             </div>
-           ); 
+        </section>
+    );
 }
 
 export default Contact

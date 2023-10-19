@@ -3,8 +3,14 @@ import './App.css';
 import Home from "./components/home";
 import About from "./components/about";
 import Navbar from './components/Navbar';
+<<<<<<< Updated upstream
 import Clients from './components/clients';
 import Contact from './components/contact';
+=======
+// import Clients from './components/clients';
+// import Contact from './components/contact';
+import BedBugTreatment from './components/services/bedBugTreatment';
+>>>>>>> Stashed changes
 import Footer from './components/footer';
 import BedBugTreatment from './components/services/bedBugTreatment';
 import CarpetCleaning from './components/services/carpetCleaning';
@@ -40,6 +46,7 @@ function App() {
 				<Routes>
 					<Route path='/' exact element={<Home />} />
 					<Route path='/about' element={<About />} />
+<<<<<<< Updated upstream
 					<Route path='/clients' element={<Clients />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/services/bed-bug-treatment' element={<BedBugTreatment />} />
@@ -52,6 +59,11 @@ function App() {
 					<Route path='/services/sofa-cleaning-services' element={<SofaCleaning />} />
 					<Route path='/services/carpet-cleaning-services' element={<CarpetCleaning />} />
 					<Route path='/services/termite-control' element={<TermiteControl />} />
+=======
+					<Route path='/services/bed-bug-treatment' element={<BedBugTreatment />} />
+					{/* <Route path='/clients' element={<Clients />} /> */}
+					{/* <Route path='/contact' element={<Contact />} /> */}
+>>>>>>> Stashed changes
 				</Routes>
 				<Footer />
 			</BrowserRouter>

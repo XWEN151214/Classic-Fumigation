@@ -11,10 +11,14 @@ import image3 from "../../images/bed-bug-3.jpeg"
 
 export default function BedBugTreatment() {
 
+<<<<<<< Updated upstream
     // useEffect(() => {
     //     window.scrollTo(0, 0);
     // }, []);
 
+=======
+    const [showServices, setShowServices] = useState(true);
+>>>>>>> Stashed changes
 
     const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
     { id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
@@ -50,9 +54,14 @@ export default function BedBugTreatment() {
 
 
                         <p>A1 fumigations are providing bed bug treatment in Karachi at affordable prices. We do bed bug spray for killing them. We use the latest techniques and methods for Bed bug treatment and help you with this problem. Bed bugs are nighttime insects, and they look like cockroaches and ants. They suck your blood at night when you are sleeping. They live so secretively that you cannot detect them at the initial stage.
+<<<<<<< Updated upstream
                         <br /><br />
                         Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
 
+=======
+                            <br /><br />
+                            Bed bugs are tiny creatures that can cause big problems in your home, not only to you, but to your possessions as well. If you suspect bed bugs are present in your home, it’s important to take action immediately, before an infestation gets out of control and you have to throw out all of your furniture and start from scratch with new things. Bed bugs vary in color.</p>
+>>>>>>> Stashed changes
                         <h3>Bed Bugs Control</h3>
                         <ul className="services-list">
                             <li><p>Bed Bugs Control For Residential & Commercial</p></li>
@@ -99,6 +108,7 @@ export default function BedBugTreatment() {
 
 
                 {/* content on the right of the page  */}
+<<<<<<< Updated upstream
                 <div className="col-md-4 taskbar py-5">
                     <div className="position-sticky " style={{ top: "5rem", bottom: "20px" }}>
                         <div className="taskbar-link-list">
@@ -116,6 +126,31 @@ export default function BedBugTreatment() {
 
 
             <div className="container-fluid px-5 py-2" id="contact-heading">
+=======
+                {
+                    showServices ?
+                        <div className="col-md-4 taskbar py-5">
+                            <div className="position-sticky" style={{ top: "5rem", bottom: "20px" }}>
+                                <div className="taskbar-link-list">
+                                    <h3 className="taskbar-heading">Our Services</h3>
+                                    <ul className="taskbar-list">
+                                        {Services.map((service) => (
+                                            <li className={`taskbar-links${service.id === 1 ? "-active" : ""}`} key={service.id}><Link to={`/services/${service.link}`}>{service.title}</Link></li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> :
+                        <></>
+                }
+            </div>
+            <div className="image-container container-fluid d-flex justify-content-center">
+                <img src={image1} alt="" className="image-fluid" />
+                <img src={image2} alt="" className="image-fluid" />
+                <img src={image3} alt="" className="image-fluid" />
+            </div>
+            <div className="container-fluid px-5 mt-4 pb-0 pt-2" id="contact-heading">
+>>>>>>> Stashed changes
                 <h4>SCHEDULE A FREE APPOINTMENT WITH US AND GET A FREE QUOTE AND ESTIMATE. FOR APPOINTMENT BOOKING, CALL OR EMAIL US!</h4>
             </div>
             <Contact />

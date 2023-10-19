@@ -4,10 +4,10 @@ import client2 from '../../images/client2.png';
 import client3 from '../../images/client3.png';
 import client4 from '../../images/client4.png';
 
-const Clients = () =>
-{
+const Clients = () => {
     return (
-              <div className="clients mt-4">
+        <section id="clients">
+            <div className="clients mt-4">
                 <h3 className="text-center py-2">Our Clients</h3>
                 <marquee scrollAmount="10">
                     <div className="client d-flex justify-content-center">
@@ -17,8 +17,10 @@ const Clients = () =>
                         <img className="mx-3" src={client4} />
                     </div>
                 </marquee>
-              </div>
-           );
+            </div>
+        </section>
+        
+    );
 }
 
 export default Clients;
