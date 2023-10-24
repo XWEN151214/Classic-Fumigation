@@ -2,8 +2,8 @@ import React from 'react';
 import Home from "./components/home";
 import About from "./components/about";
 import Navbar from './components/Navbar';
-import Clients from './components/clients';
 import Contact from './components/contact';
+import Clients from './components/clients';
 import BedBugTreatment from './components/services/bedBugTreatment';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -34,8 +34,8 @@ function App() {
 					<Route path='/' exact element={<Home />} />
 					<Route path='/about' element={<About />} />
 					<Route path='/services/bed-bug-treatment' element={<BedBugTreatment />} />
-					<Route path='/clients' element={<Clients />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/clients' element={<Clients />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

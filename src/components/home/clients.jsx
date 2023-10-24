@@ -7,8 +7,11 @@ import client4 from '../../images/client4.png';
 const Clients = () =>
 {
     return (
-              <div className="clients mt-4">
-                <h3 className="text-center py-2">Our Clients</h3>
+              <div className="clients mt-4" id="clients">
+                <h3 className="text-center py-2">
+                    <i className="fa fa-group mx-3"></i>
+                    Our Clients
+                </h3>
                 <marquee scrollAmount="10">
                     <div className="client d-flex justify-content-center">
                         <img className="mx-3" src={client1} />

@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
+import logo from "../images/logo.jpg";
 
 const showDropDown = (isDropped, setIsDropped) => {
     if (isDropped) {
@@ -12,15 +13,16 @@ const showDropDown = (isDropped, setIsDropped) => {
 }
 
 const Services = [{ id: 1, link: "bed-bug-treatment", title: "Bed-Bug Treatment" },
-{ id: 2, link: "carpet-cleaning-services", title: "Carpet Cleaning Service" },
-{ id: 3, link: "coakroaches-control-services", title: "Coackroaches Control Service" },
-{ id: 4, link: "disinfection-services", title: "Disinfection Services" },
-{ id: 5, link: "fumigation-services", title: "Fumigation Services" },
-{ id: 6, link: "mosquito-spray-service", title: "Mosquito Spray Service" },
-{ id: 7, link: "pest-control", title: "Pest Control" },
-{ id: 8, link: "rodent-control", title: "Rodent Control" },
-{ id: 9, link: "sofa-cleaning-services", title: "Sofa Cleaning Services" },
-{ id: 10, link: "termite-control", title: "Termite Control" }]
+                  { id: 2, link: "cockroach-control", title: "Cockroach Control" },
+                  { id: 4, link: "ant-control", title: "Ant Control" },
+                  { id: 5, link: "lizard-control", title: "Lizard Control" },
+                  { id: 6, link: "tick-control", title: "Tick Control" },
+                  { id: 7, link: "silverish-control", title: "Silverish Control" },
+                  { id: 8, link: "termite-control", title: "Termite Control" },
+                  { id: 9, link: "moth-treatment", title: "Moth Treatment" },
+                  { id: 10, link: "crawling-insects", title: "Crawling Insects" },
+                  { id: 11, link: "disinfection-service", title: "Disinfection" },
+                 ]
 
 const Navbar = () => {
     const [isDropped, setIsDropped] = useState(false);
@@ -36,7 +38,9 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className="social-link d-flex justify-content-center align-items-center mx-2 p-0 my-0">
-                        <i className="fa fa-instagram"></i>
+                        <Link to="https://instagram.com/classicfumigation?igshid=MzRlODBiNWFlZA==" target="_blank">
+                            <i className="fa fa-instagram"></i>
+                        </Link>
                     </li>
                     <li className="social-link d-flex justify-content-center align-items-center mx-2 p-0 my-0">
                         <i className="fa fa-linkedin"></i>
@@ -45,36 +49,44 @@ const Navbar = () => {
                 <div className="social-mail d-flex align-items-center col-lg-6">
                     <div className="d-flex align-items-center m-0 p-0"> 
                         <i className="fa fa-envelope m-0"></i>
-                        <p className="p-0 m-0">help@bixolcleaning.com</p>
+                        <p className="p-0 m-0">info@classicfumigation.com</p>
                     </div>
                 </div>
             </div>
             <div className="container-fluid py-3">
                 <div className="navbar-header">
-                    <Link to="/">Classic Fumiga</Link>
+                    <Link to="/">
+                        <img className="logo" src={logo} />
+                    </Link>
                 </div>
                 <ul className="nav">
-                    <li className="mx-3">
+                    <li className="mx-2">
                         <Link to="/">Home</Link>
                     </li>
-                    <li className="mx-3" onClick={() => showDropDown(isDropped, setIsDropped)}>
+                    <li className="dropdown mx-2" onClick={() => showDropDown(isDropped, setIsDropped)}>
                         <a className="dropdown-toggle" href="#">
                             Services
-                            <span className="caret"></span>
                         </a>
                         {
-                            isDropped ? <div className="dropmenu pb-2">
-                                 {Services.map((service) => (
-                                    <li className="px-3" key={service.id}>
+                            isDropped ? 
+                            <ul className="dropmenu pb-2 px-0">
+                                {Services.map((service) => (
+                                    <li className="px-4 py-1" key={service.id}>
                                         <Link to={`/services/${service.link}`}>{service.title}</Link>
                                     </li>
                                 ))}
-                            </div>
-                                : <></>
+                            </ul>: 
+                            <></>
                         }
                     </li>
-                    <li className="mx-3">
+                    <li className="mx-2">
                         <Link to="/about">About Us</Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/contact">Contact</Link>
+                    </li>
+                    <li className="mx-2">
+                        <Link to="/clients">Clients</Link>
                     </li>
                 </ul>
                 <div className="menu-btn">
@@ -85,6 +97,11 @@ const Navbar = () => {
                 navOpen ?
                     <div className="mobile-navbar h-100">
                         <div className="mobile-nav py-2 px-2">
+                        <div className="navbar-logo">
+                            <Link to="/">
+                                <img className="logo" src={logo} />
+                            </Link>
+                        </div>
                             <li className="mx-3 mt-3">
                                 <Link to="/" onClick={() => setNavOpen(!navOpen)}>Home</Link>
                             </li>
@@ -94,12 +111,11 @@ const Navbar = () => {
                             <li className="mx-3 mt-3" onClick={() => showDropDown(isDropped, setIsDropped)}>
                                 <a className="dropdown-toggle" href="#">
                                     Services
-                                    <span className="caret"></span>
                                 </a>
                                 {
-                                     
-                                    isDropped ? <div className=" pb-2">
-                                            {Services.map((service) => (
+                                    isDropped ? 
+                                    <div className="pb-2">
+                                        {Services.map((service) => (
                                             <li className="px-3" key={service.id}>
                                                 <Link to={`/services/${service.link}`} onClick={() => setNavOpen(!navOpen)}>{service.title}</Link>
                                             </li>

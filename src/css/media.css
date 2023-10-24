@@ -12,37 +12,60 @@
       margin-right: 5rem;
     }
 
+    .dropmenu
+    {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     .box
     {
       margin-left: 5rem;
       margin-right: 5rem;
     }
 
-    .contact .container-fluid
+    .contact-info .container-flex
     {
       padding-left: 10%;
       padding-right: 10%;
     }
 
-    .contact form
+    .packages .row
     {
-      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
-    .contact .contact-info .box
+    .testimonials .container-fluid
     {
-      margin-left: 5%;
-      margin-right: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
 
-    .testimonials .controllers .left
+    #contact-page .row
     {
-       left: 20%;
+      padding-left: 0;
+      padding-right: 0;
     }
 
-    .testimonials .controllers .right
+    #contact-page .contact-text 
     {
-       right: 20%;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .contact .container-flex
+    {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    
+    .contact form input,
+    .contact form select,
+    .contact form textarea
+    {
+      width: 65%;
     }
 
     .about .content
@@ -51,24 +74,45 @@
       margin-right: 10%;
     }
 
-    .about .content p,
-    .about .content h3
+    .cores .core .content    
     {
-      padding-right: 10%;
-      padding-left: 10%;
+      margin-left: 0;
+      margin-right: 0;
+
     }
     
+    .cores .core
+    {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+
+    .clients-page 
+    {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .about .box .inner-content:nth-child(1)
+    {
+      padding-left: 25%;
+      padding-right: 25%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
+    .about .container-flex:nth-child(1)
+    {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .about .content 
+    {
+      margin: 0;
+    }
 } 
 
-@media screen and (max-width: 1440px) and (min-width: 1200px)
-{
-  .about .content p,
-  .about .content h3
-  {
-    padding-left: 10%;
-  }
-  
-}
 
 @media screen and (max-width: 1440px) and (min-width: 1142px)
 {
@@ -81,10 +125,30 @@
 
 @media screen and (max-width: 768px)
 {
+  .carousel .carousel-inner
+  {
+    height: 32rem;
+  }
+
   .service-box .row
   {
     flex-direction: column;
     margin-top: 0;
+  }
+
+  .testimonials h5
+  {
+    padding-left: 0;
+  }
+
+  .about .container-flex:nth-child(1)
+  {
+    flex-direction: column;
+  }
+
+  .about .container-flex:nth-child(2)
+  {
+    margin-top: 2rem;
   }
 
   .service-box .box
@@ -93,33 +157,134 @@
     margin-top: 3rem;
   }
 
+  #contact-page .form-container
+  {
+    right: 10px;
+    width: 50%;
+  }
+
+  #contact-page .contact-text
+  {
+    padding-left: 2%;
+  }
+
   .ftr
+  {
+    flex-direction: column;
+  }
+
+  .contact .container-flex
   {
     flex-direction: column;
   }
 
   .contact .form-container
   {
+    width: 80%;
+  }
+
+  .contact form
+  {
+    width: 100%;
+  }
+
+  .contact form input,
+  .contact form select,
+  .contact form textarea
+  {
     width: 100%;
   }
 
   .packages .row
   {
-    display: inline;
+    flex-direction: column;
+  }
+
+  .packages .row h4
+  {
+    padding-left: 5%;
   }
 
   .packages .box
   {
     margin-top: 3rem;
   }
+
+  .clients-page h4
+  {
+    text-align: center;
+  }
+
+  .clients-page .row div
+  {
+    width: 50%;
+  }
 } 
 
 
 @media screen and (max-width: 425px) 
 {
+  .navbar-header
+  {
+    display: none;
+  }
+
+  .clients-page .row div
+  {
+    width: 100%;
+  }
+
+  .about .container-flex:nth-child(2)
+  {
+    flex-direction: column;
+  }
+
+  .about .about-img img
+  {
+    width: 150%;
+  }
+
+  .contact-info .container-flex
+  {
+    padding-top: 1rem;
+    flex-direction: column;
+  }
+
+  .contact-info .box
+  {
+    min-height: 5rem;
+  }
+
+  .carousel .carousel-inner
+  {
+    height: 25rem;
+  }
+
+  .carousel .carousel-inner .carousel-caption .content
+  {
+    top: 10rem;
+  }
+
+  #contact-page .contact-text
+  {
+    display: none;
+  }
+
   .nav li
   {
     display: none;
+  }
+  
+  .contact .form-container
+  {
+    width: 100%;
+  }
+
+  #contact-page .form-container
+  {
+    width: 100%;
+    padding-left: 3%;
+    filter: none;
   }
 
   .mobile-nav
@@ -137,11 +302,6 @@
     flex-direction: column;
   }
 
-  .contact .form-container
-  {
-    width: 90%;
-  }
-
   .contact .contact-info
   {
     flex-direction: column;
@@ -152,11 +312,9 @@
     margin-top: 2rem;
   }
 
-  .testimonials .box .content
+  .testimonials .container-fluid
   {
     flex-direction: column;
-    padding-bottom: 4rem;
-    margin-top: 2rem;
   }
 
   .carousel .slides .container-fluid .header-content
@@ -194,6 +352,11 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
+  }
+
+  .testimonials .container-fluid .content .box
+  {
+    width: 18rem;
   }
 
   .nav-info .social-mail p

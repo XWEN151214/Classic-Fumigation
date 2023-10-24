@@ -1,14 +1,20 @@
 import React from "react";
-import star from "../../images/star.png";
-import office from "../../images/office.png";
-import flat from "../../images/flat.png";
 
 const Packages = () =>
 {
     return (
             <div className="packages">
-                <h3 className="text-center py-2 mt-4">Packages</h3>
+                <h3 className="text-center py-2 mt-4">
+                    <i className="fa fa-cube mx-3"></i>
+                    Packages
+                </h3>
                 <div className="row d-flex justify-content-center align-items-center py-4">
+                    <h4 className="px-lg-5"  data-aos="fade-left" data-aos-duration="800">
+                        Tailored Packages, Boundless Experiences:
+                    </h4>
+                    <h4 className="pb-4 px-lg-5"  data-aos="fade-left" data-aos-duration="800">
+                        Offering the best there is
+                    </h4>
                     <div className="box d-flex justify-content-center py-4"  data-aos="fade-down" data-aos-duration="800"  id="package-row">
                         <div className="package-img d-flex justify-content-center m-0 p-0">
                             <i className="fa fa-briefcase"></i>

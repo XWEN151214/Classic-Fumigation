@@ -1,5 +1,6 @@
 {
-  "name": "fumigation-vite",
+  "name": "classic-fumigation",
+  "homepage": "classicfumigation.com.pk",
   "private": true,
   "version": "0.0.0",
   "type": "module",

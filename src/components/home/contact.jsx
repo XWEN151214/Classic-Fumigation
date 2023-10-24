@@ -1,17 +1,22 @@
 import React from "react";
-import email from "../../images/email.png";
 
 const Contact = () =>
 {
     return (
             <div className="contact" id="contact">
-                <div className="row d-flex justify-content-center align-items-center">
-                    <div className="container-fluid d-flex justify-content-center align-items-center py-2">
-                        <div className="form-container col-lg-6 px-4" data-aos="fade-up" data-aos-duration="2000">
-                            <form className="col-lg-12" action="">
-                                <div className="col-lg-12 py-2">
-                                    <h3 className="text-center py-2">Contact Us</h3>
-                                </div>
+                <div className="col-lg-12 py-2">
+                    <h3 className="text-center py-2">
+                        <i className="fa fa-phone mx-3"></i>
+                        Contact Us
+                    </h3>
+                </div>
+                <div className="row d-flex justify-content-center align-items-center py-2">
+                    <div className="container-flex d-flex justify-content-center py-2">
+                        <div className="col-lg-6">
+                            <h3 className="text-center py-2">Send us a Message</h3>
+                        </div>
+                        <div className="form-container d-flex col-gl-6" data-aos="fade-up" data-aos-duration="2000">
+                            <form action="">
                                 <div className="col-lg-12 py-2">
                                     <input type="text" class="form-control" placeholder="First name" />
                                 </div>
@@ -39,26 +44,15 @@ const Contact = () =>
                                     </select>
                                 </div>
                                 <div className="col-lg-12 py-2">
-                                    <textarea rows="3" class="form-control " id="validationTextarea" placeholder="Message.."  required></textarea>
+                                    <textarea rows="7" class="form-control " id="validationTextarea" placeholder="Message.."  required></textarea>
                                 </div>
-                                <div className="col-lg-12 d-flex justify-content-center py-2">
-                                    <buttton className="btn">Submit</buttton>
+                                <div className="col-lg-12">
+                                    <buttton className="btn d-flex justify-content-center align-items-center">
+                                        <i className="fa fa-envelope mx-2"></i>
+                                        Submit
+                                    </buttton>
                                 </div>
                             </form>
-                        </div>
-                        <div className="contact-info d-flex justify-content-center align-items-center col-lg-6 mt-4">
-                            <div className="info box col-lg-8 py-4" data-aos="fade-up" data-aos-duration="800">
-                                <i className="fa fa-map-marker"></i>
-                                <h6 className="text-center py-4">plot 2 Block # 82380 St Kilda Road, Melbourne, Australia</h6>
-                            </div>
-                            <div className="info box col-lg-8 py-2" data-aos="fade-up" data-aos-duration="800">
-                                <i className="fa fa-phone"></i>
-                                <h6 className="text-center py-4">+92 300 9206830</h6>
-                            </div>
-                            <div className="info box col-lg-8 py-2" data-aos="fade-up" data-aos-duration="800">
-                                <i className="fa fa-envelope-open"></i>
-                                <h6 className="text-center py-4">help@bixolcleaning.com</h6>
-                            </div>
                         </div>
                     </div>
                 </div>

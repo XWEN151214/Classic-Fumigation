@@ -1,34 +1,41 @@
 import React from "react";
-import { useState, useEffect} from "react";
+import { useState, useRef, useEffect } from "react";
 import test from "../../images/test.webp";
 
-const next = (middleSlide, setMiddleSlide) =>
+const slide = (middleSlide, setMiddleSlide, activeSlide) =>
 {
-    middleSlide + 1 < content.length
-    ? setMiddleSlide(middleSlide + 1)
-    : setMiddleSlide(middleSlide); 
-}
-
-const prev = (middleSlide, setMiddleSlide) =>
-{
-    middleSlide - 1 >= 0 
-    ? setMiddleSlide(middleSlide - 1)
-    : setMiddleSlide(middleSlide); 
+    activeSlide.current.style.animation = 'slide-out 1s 1';
+    setTimeout
+    (
+        () =>
+        {
+            activeSlide.current.style.animation = 'slide-in 1s 1';
+            setTimeout
+            (
+                ()=>
+                {
+                    setMiddleSlide(middleSlide);
+                },
+                995
+            )
+        },
+        1000
+    );
 }
 
 const content = [
                     {
-                        'p': 'This is not your average product; its a revolutionary experience. From the moment I started using it, I felt a positive shift in my mood and overall outlook.',
-                        'name': 'Lance Jarvis',
+                        'p': ' This is not your average product; its a revolutionary experience. From the moment I started using it, I felt a positive shift in my mood and overall outlook.',
+                        'name': 'Arsalan',
                         'picture': test
                     },
                     {
-                        'p': 'Remember, testimonial texts can vary widely based on the context and the type of product or service being referred to.',
-                        'name': 'Lance Jarvis',
+                        'p': '  Remember, testimonial texts can vary widely based on the context and the type of product or service being referred to.',
+                        'name': 'Mustafa',
                         'picture': test
                     },
                     {
-                        'p': 'Wow, I cant believe how much my life has changed since discovering this incredible product! Its like magic in a bottle.',
+                        'p': ' Wow, I cant believe how much my life has changed since discovering this incredible product! Its like magic in a bottle.',
                         'name': 'Lance Jarvis',
                         'picture': test
                     },
@@ -37,53 +44,40 @@ const content = [
 const Testimonials = () =>
 {
     const [middleSlide, setMiddleSlide] = useState(0);
+    const activeSlide = useRef(0);
     return(
-            <div className="testimonials mt-4">
-                <h3 className="text-center py-2">Testimonials</h3>
-                <div className="controllers container-fluid d-flex justify-content-center align-items-center">
-                    <span className="left">
-                        <i className="fa fa-arrow-circle-left" onClick={()=>prev(middleSlide, setMiddleSlide)}></i>
-                    </span>
-                    <span className="right">
-                        <i className="fa fa-arrow-circle-right" onClick={()=>next(middleSlide, setMiddleSlide)}></i>
-                    </span>
-                </div>
-                <div className="slider container-fluid d-flex justify-content-center px-4" data-aos="fade-right" data-aos-duration="1100">
-                    <div className="testimonial-box box d-flex justify-content-center align-items-center p-0 mx-3">
-                        <div className="content d-flex justify-content-center align-items-center">
-                            <div className="col-lg-6">
-                                <div className="text py-2">
-                                    <p className="text-center py-2 px-3">
-                                    &quot; {content[middleSlide].p}
-                                    </p>
-                                </div>
-                                <div className="social-links d-flex justify-content-center">
-                                    <li className="social-link d-flex justify-content-center align-items-center mx-3">
-                                        <a href="#">
-                                            <i className="fa fa-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li className="social-link d-flex justify-content-center align-items-center mx-3">
-                                        <a href="#">
-                                            <i className="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li className="social-link d-flex justify-content-center align-items-center mx-3">
-                                        <a href="#">
-                                          <i className="fa fa-linkedin"></i>
-                                        </a>
-                                    </li>
-                                </div>
+            <div className="testimonials mt-2 py-2">
+                <h3 className="text-center py-2">
+                    <i className="fa fa-commenting mx-3"></i>
+                    Testimonials
+                </h3>
+                <div className="container-fluid d-flex justify-content-center align-items-center mt-2 py-4 w-100">
+                    <div className="col-lg-6 py-2 mt-2" data-aos="fade-right" data-aos-duration="800">
+                        <h5 classname="py-2 px-lg-5">
+                            Unlocking Success Stories:
+                        </h5> 
+                        <h4 className="py-2 px-lg-5">
+                            Discover What Our Valued Clients Have to Say About Their Journey with Us!
+                        </h4>
+                    </div>
+                    <div className="content d-flex justify-content-center align-items-center col-lg-6" data-aos="fade-left" data-aos-duration="800">
+                        <div className="box justify-content-center align-items-center" ref={activeSlide} key={middleSlide}>
+                            <div className="test-img d-flex justify-content-center col-lg-12 py-2 mx-3">
+                                <img src={content[middleSlide].picture} />
+                                <h4 className="text-center py-2">{content[middleSlide].name}</h4>
                             </div>
-                            <div className="col-lg-6">
-                                <div className="image d-flex justify-content-center">
-                                    <img src={content[middleSlide].picture}/>
-                                </div>
-                                <div className="details py-1">
-                                    <p className="text-center py-2">{content[middleSlide].name}</p>
-                                </div>
+                            <div className="test-text col-lg-12">
+                                <p className="text-center py-2">
+                                    <i className="fa fa-quote-left"></i>
+                                    {content[middleSlide].p}
+                                </p>
                             </div>
                         </div>
+                        <ol class="indicators d-flex justify-content-center mt-3">
+                            <i class={middleSlide===0?"fa fa-circle mx-1":"fa fa-circle-o mx-1"} onClick={()=>slide(0, setMiddleSlide, activeSlide)}></i>
+                            <i class={middleSlide===1?"fa fa-circle mx-1":"fa fa-circle-o mx-1"} onClick={()=>slide(1, setMiddleSlide, activeSlide)}></i>
+                            <i class={middleSlide===2?"fa fa-circle mx-1":"fa fa-circle-o mx-1"} onClick={()=>slide(2, setMiddleSlide, activeSlide)}></i>
+                        </ol>
                     </div>
                 </div>
             </div>
